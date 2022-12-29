@@ -1,5 +1,7 @@
 # site_EBEC23
 
+Para o desenvolvimento deste site foram usadas linguagens de marcação como **HTML** e **CSS**, e uma linguagem de programação que foi o **JavaScript**. De seguida, teem um guião de como correr o projeto na vossa máquina, com o auxilio do **Visual Studio Code (VS Code)**, que foi o ambiente de desenvolvimento usado.
+
 ## Live Server
 
 Para correrem o projeto basta entrarem no ficheiro "index.html" e fazerem 'Go Live'
