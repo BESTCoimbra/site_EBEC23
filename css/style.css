@@ -265,8 +265,11 @@ header #en img{
 }
 
 /* ======================= FAQ ======================= */
-
 .faq-container {
+    /*
+    display: grid;
+    align-content: center;
+    */
     height: 50rem;
     padding: 10% 20%;
     background-color: var(--white-offwhite);
@@ -306,12 +309,15 @@ header #en img{
     color: var(--grey-visualidentitygrey);
     background-color: white;
     border-radius: 5px;
-    padding: 20px 35px 15px 35px;
     margin: 0;
 }
 
 .response-1, .response-2, .response-3, .response-4, .response-5, .response-6, .response-7 {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    transition: padding 0.5s ease-in-out;
+    padding: 0 35px;
 }
 
 #seta {
@@ -326,4 +332,3 @@ header #en img{
     cursor: pointer;
     transition: 0.4s;
 }
-
