@@ -264,6 +264,110 @@ header #en img{
     padding: 10rem;
 }
 
+/* ======================= Horário ======================= */
+.schedule h1 {
+    text-align: center;
+}
+
+.schedule .schedule-box {
+    padding: 3px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.schedule .schedule-box .button-box {
+    position: absolute;
+}
+
+.schedule .schedule-box .button-box .button-div {
+    display: flex;
+    justify-content: end;
+}
+
+.schedule .schedule-box .my-button {
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--orange-visualidentityorange);
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+
+.plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+  
+.plus-line {
+    width: 20px;
+    height: 3px;
+    background-color: var(--white-offwhite);
+    position: absolute;
+}
+  
+.plus-line-horizontal {
+    transform: rotate(0deg);
+}
+  
+.plus-line-vertical {
+    transform: rotate(90deg);
+}
+
+.my-button:hover {
+    background-color: var(--white-offwhite);
+}
+
+.my-button:hover .plus-line {
+    background-color: var(--orange-visualidentityorange);
+}
+
+.dropdown {
+    border-radius: 25px;
+    width: 300px;
+    height: 100px;
+    background-color: var(--orange-visualidentityorange);
+    display: none;
+    flex-direction: column;
+}
+  
+.top-section {
+    flex: 1;
+    background-color: var(--orange-visualidentityorange);
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: var(--white-offwhite);
+}
+  
+.bottom-section {
+    flex: 1;
+    background-color: var(--orange-visualidentityorange);
+    text-align: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: var(--white-offwhite);
+}
+
+.top-section:hover {
+    background-color: var(--white-offwhite);
+    color: var(--orange-visualidentityorange);
+}
+
+.bottom-section:hover {
+    background-color: var(--white-offwhite);
+    color: var(--orange-visualidentityorange);
+}
+  
 /* ======================= Categorias ======================= */
 
 /* ======================= Contador ======================= */
@@ -287,33 +391,6 @@ header #en img{
     font-size: 2rem;
     margin: 0;
 }
-
-.container-demo .demo-days,
-.container-demo .demo-hours,
-.container-demo .demo-minutes,
-.container-demo .demo-seconds {
-    background-color: rgba(255, 255, 255, 0.35);
-    height: 10rem;
-    width: 8rem;
-    margin: 0.8rem;
-    border-radius: 1rem;
-    padding: 1rem 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-.container-demo .timer-demo h1 {
-    font-size: 4rem;
-    font-weight: 800;
-    color: var(--white-offwhite);
-}
-
-.container-demo .timer-demo span {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--white-offwhite);
-}
-
-/* ======================= Horário ======================= */
 
 /* ======================= Fotos ======================= */
 
@@ -392,6 +469,36 @@ header #en img{
 }
 
 /* ======================= Equipa ======================= */
+.team-container {
+   
+    height: 40rem;
+    padding: 8rem;
+}
+
+.team-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-container .equipa-box {
+    width: 50rem; 
+    height: 27rem;
+    background-color: red;
+    margin:auto; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 10rem);
+    grid-template-rows: repeat(3, 9rem);
+  }
+  
+  .grid-item {
+    /* Add some basic styling to the grid items */
+    border: 1px solid black;
+    text-align: center;
+    border: 3px solid rgb(26, 226, 0);
+  }
 
 /* ======================= Organização ======================= */
 

@@ -43,4 +43,19 @@ function openResponse(id) {
 		seta.style.boxShadow = "2px -2px 0 0.5px white inset"
 		seta.style.transform = "rotate(135deg)"
 	}
+
+
+}
+
+function openDropdownResponse() {
+	var response = document.querySelector('.dropdown');
+
+	if (response.style.display === 'flex'){			
+		response.style.display='none';
+	}
+	else {												
+		response.style.display='flex';
+	}
+
+
 }
