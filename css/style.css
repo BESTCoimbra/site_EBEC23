@@ -257,12 +257,38 @@ header #en img{
 .pyramid {
     width: 100%;
     height: 30rem;
-    display: flex;
-    color: #000;
+    display:block;
     align-items: center;
     background-color: var(--white-offwhite);
-    padding: 10rem;
+    justify-content: center;
 }
+
+.pyramid .pyramid-title {
+    color: #000;
+    justify-content: center;
+    text-align: center;
+}
+
+ mark.orange{
+    color: var(--orange-lightorange);
+    background: none;
+ }
+
+ .pyramid .pyramid-container{
+    display:flex;
+ }
+
+img{
+    align-items:left;
+    width: 50%;
+    height:50%;
+ }
+
+ .pyramid .pyramid-container .pyramid-text1 {
+  vertical-align: right;
+   font-size: 150%;
+}
+
 
 /* ======================= Categorias ======================= */
 
