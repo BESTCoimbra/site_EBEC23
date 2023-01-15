@@ -47,7 +47,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99999;
+    z-index: 999999;
 }
 
 .loader img {
@@ -264,6 +264,40 @@ header #en img{
     padding: 10rem;
 }
 
+/* ======================= Categorias ======================= */
+
+/* ======================= Contador ======================= */
+.container-demo {
+    padding: 2rem;
+}
+
+.container-demo .title-demo {
+    text-align: center;
+    padding: 3rem 0 0 0;
+}
+
+.container-demo .timer-demo {
+    height: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-demo .demo {
+    color: red;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* ======================= Horário ======================= */
+
+/* ======================= Fotos ======================= */
+
+/* ======================= Júris ======================= */
+
+/* ======================= Parceiros ======================= */
+
+
 /* ======================= FAQ ======================= */
 .faq-container {
     /*
@@ -332,3 +366,9 @@ header #en img{
     cursor: pointer;
     transition: 0.4s;
 }
+
+/* ======================= Equipa ======================= */
+
+/* ======================= Organização ======================= */
+
+/* ======================= Footer ======================= */

@@ -29,14 +29,14 @@ function openResponse(id) {
 		if (id != i) {desativateOpenResponses(i)}
 	}
 
-	if (response.style.maxHeight === '300px'){
+	if (response.style.maxHeight === '300px'){			// esta aberto 
 		response.style.maxHeight = "0";
 		response.style.padding = "0 35px"
 		question.style.backgroundColor = "white"
 		seta.style.boxShadow = "2px -2px 0 0.5px var(--orange-visualidentityorange) inset"
 		seta.style.transform = "rotate(-45deg)"
 	}
-	else {
+	else {												// esta fechado 
 		response.style.maxHeight = "300px"
 		response.style.padding = "20px 35px"
 		question.style.backgroundColor = "var(--orange-visualidentityorange)"
