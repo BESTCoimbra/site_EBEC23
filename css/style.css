@@ -134,7 +134,9 @@ header .nav-bar .nav-option:hover {
 }
 
 header .languages {
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
 }
 
 header .languages li {
@@ -144,6 +146,71 @@ header .languages li {
 header #pt img, 
 header #en img{
     width: 2.1rem;
+    margin: 0.2rem;
+}
+
+.container-menu-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-nav {
+    transform: scale(var(--ggs,1))
+}
+.menu-nav,
+.menu-nav::after,
+.menu-nav::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+}
+
+.menu-nav::after,
+.menu-nav::before {
+    content: "";
+    position: absolute;
+    top: -6px
+}
+
+.menu-nav::after {
+    top: 6px
+}
+
+.options-phone {
+    position: absolute;
+    display: grid;
+    z-index: 999;
+    text-align: center;
+    margin: auto;
+    height: 32rem;
+    width: 100%;
+    padding-top: 6rem;
+    background-color: #fff;
+    justify-content: center;
+    box-shadow: 2px 0px 10px #000;
+}
+
+.options-phone .nav-option {
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+.options-phone img {
+    width: 60px;
+}
+
+.nav-bar-phone {
+    display: block;
+}
+
+.languages-phone {
+    padding: 1rem;
 }
 
 /* ======================= HOME PAGE ======================= */
@@ -182,7 +249,7 @@ header #en img{
     width: 100%;
     height: 41rem;
     text-align: center;
-    padding: 10rem 0rem;
+    padding: 9rem 0rem;
 }
 
 .home-page .background .home-page-content h2 {
@@ -215,14 +282,14 @@ header #en img{
     overflow: hidden;
     line-height: 0;
     z-index: 5;
-    margin-top: 41.1rem;
+    margin-top: 44.1rem;
 }
 
 .custom-shape-divider-bottom-1672270909 svg {
     position: relative;
     display: block;
     width: calc(200% + 1.3px);
-    height: 100px;
+    height: 50px;
     transform: rotateY(180deg);
 }
 
@@ -238,14 +305,14 @@ header #en img{
     overflow: hidden;
     line-height: 0;
     z-index: 4;
-    margin-top: 41rem;
+    margin-top: 44rem;
 }
 
 .custom-shape-divider-bottom-1672270931 svg {
     position: relative;
     display: block;
     width: calc(185% + 1.3px);
-    height: 100px;
+    height: 50px;
     transform: rotateY(180deg);
 }
 
@@ -377,6 +444,7 @@ header #en img{
 
 .container-demo .title-demo {
     text-align: center;
+    margin-top: 2rem;
 }
 
 .container-demo .timer-demo {
