@@ -9,11 +9,13 @@
 }
 
 :root {
-    --white-offwhite:#EFECEA;
-    --orange-lightorange:#F3BC6A;
-    --orange-visualidentityorange:#EEA225;
-    --grey-visualidentitygrey:#666666;
-    --black-offblack:#0D0D0D;
+    --white-offwhite:#E8EAEA;
+    --orange-lightorange:#F2B654;
+    --orange-visualidentityorange:#E49311;
+    --blue-visualidentity:#2A5AF4;
+    --black-offblack:#020027;
+
+    --gray-oldvisualidenty: #676767;
 }
 
 ::before,::after {
@@ -101,8 +103,7 @@ header {
     width: 100%;
     height: 6rem;
     padding: 8px 12%;
-    color: var(--grey-visualidentitygrey);
-    background-color: #fff;
+    background-color: white;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 99999;
@@ -125,7 +126,7 @@ header .nav-bar {
 header .nav-bar .nav-option {
     padding: 1rem;
     text-decoration: none;
-    color: var(--grey-visualidentitygrey);
+    color: #444444;
     transition: 0.3s;
 }
 
@@ -169,7 +170,7 @@ header #en img{
     height: 3px;
     border-radius: 3px;
     background: currentColor;
-    color: var(--grey-visualidentitygrey);
+    color: var(--gray-oldvisualidenty);
 }
 
 .menu-nav::after,
@@ -192,7 +193,7 @@ header #en img{
     height: 32rem;
     width: 100%;
     padding-top: 6rem;
-    background-color: #fff;
+    background-color: white;
     justify-content: center;
     box-shadow: 2px 0px 10px #000;
 }
@@ -201,7 +202,7 @@ header #en img{
     padding: 1rem;
     text-decoration: none;
     font-weight: 600;
-    color: #000;
+    color: var(--gray-oldvisualidenty);
 }
 
 .options-phone img {
@@ -213,7 +214,7 @@ header #en img{
 }
 
 .options-phone .languages-phone {
-    padding: 1rem;
+    padding: 0.5rem 1rem 1rem 1rem;
 }
 
 @media only screen and (max-width: 1120px){
@@ -258,9 +259,9 @@ header #en img{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #808080;
+    background-color: var(--gray-oldvisualidenty);
     z-index: -1;
-    opacity: 75%;
+    opacity: 70%;
 }
 
 .home-page .background .home-page-content {
@@ -469,6 +470,7 @@ header #en img{
 .container-demo .title-demo {
     text-align: center;
     margin-top: 2rem;
+    margin-bottom: 0;
 }
 
 .container-demo .timer-demo {
@@ -504,6 +506,10 @@ header #en img{
 }
 
 @media only screen and (max-width: 822px) {
+    .container-demo .title-demo {
+        margin-top: 4rem;
+    }
+
     .container-demo .timer-demo {
         height: 9.6rem;
     }
@@ -514,7 +520,7 @@ header #en img{
     .container-demo .demo-seconds {
         height: 8rem;
         width: 6.4rem;
-        margin: 0.6.4rem;
+        margin: 0.64rem;
         padding: 0.8rem 0;
     }
 
@@ -528,29 +534,18 @@ header #en img{
 }
 
 @media only screen and (max-width: 695px) {
-    .container-demo .title-demo {
+    .title-demo {
+        margin-top: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .container-demo {
+        transform: scale(0.8);
+    }
+
+    .title-demo {
         margin-top: 3rem;
-    }
-    .container-demo .timer-demo {
-        height: 7.6rem;
-    }
-
-    .container-demo .demo-days,
-    .container-demo .demo-hours,
-    .container-demo .demo-minutes,
-    .container-demo .demo-seconds {
-        height: 7rem;
-        width: 5.4rem;
-        margin: 0.7rem;
-        padding: 0.48rem 0;
-    }
-
-    .container-demo .timer-demo h1 {
-        font-size: 2.4rem;
-    }
-
-    .container-demo .timer-demo span {
-        font-size: 0.9rem;
     }
 }
 
@@ -568,7 +563,7 @@ header #en img{
     align-content: center;
     */
     height: 50rem;
-    padding: 10% 20%;
+    padding: 10% 0;
     background-color: var(--white-offwhite);
 }
 
@@ -580,6 +575,7 @@ header #en img{
 
 .faq-container li {
     border-radius: 5px;
+    width: 50rem;
     list-style-type: none;
     background-color: white;
     transform: translateY(0.45em);
@@ -598,12 +594,12 @@ header #en img{
     position: absolute;
     height: 100%;
     width: 10px;
-    background-color: #EEA225;
+    background-color: var(--orange-visualidentityorange);
     border-radius: 5px 0 0 5px;
 }
 
 .faq-container p {
-    color: var(--grey-visualidentitygrey);
+    color: var(--gray-oldvisualidenty);
     background-color: white;
     border-radius: 5px;
     margin: 0;
