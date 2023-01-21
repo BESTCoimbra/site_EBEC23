@@ -8,6 +8,16 @@
 	}
 })();
 
+function menuOpen() {
+	var navbarPhone = document.querySelector('.options-phone');
+	if (navbarPhone.style.display === 'grid'){			
+		navbarPhone.style.display='none';
+	}
+	else {												
+		navbarPhone.style.display='grid';
+	}
+}
+
 function desativateOpenResponses(id) {
 	var response = document.querySelector('.response-'+id);
 	var question = document.querySelector('.question-'+id);
@@ -43,4 +53,19 @@ function openResponse(id) {
 		seta.style.boxShadow = "2px -2px 0 0.5px white inset"
 		seta.style.transform = "rotate(135deg)"
 	}
+
+
+}
+
+function openDropdownResponse() {
+	var response = document.querySelector('.dropdown');
+
+	if (response.style.display === 'flex'){			
+		response.style.display='none';
+	}
+	else {												
+		response.style.display='flex';
+	}
+
+
 }
