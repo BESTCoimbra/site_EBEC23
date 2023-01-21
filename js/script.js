@@ -8,6 +8,16 @@
 	}
 })();
 
+function menuOpen() {
+	var navbarPhone = document.querySelector('.options-phone');
+	if (navbarPhone.style.display === 'grid'){			
+		navbarPhone.style.display='none';
+	}
+	else {												
+		navbarPhone.style.display='grid';
+	}
+}
+
 function desativateOpenResponses(id) {
 	var response = document.querySelector('.response-'+id);
 	var question = document.querySelector('.question-'+id);

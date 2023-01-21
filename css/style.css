@@ -9,11 +9,13 @@
 }
 
 :root {
-    --white-offwhite:#EFECEA;
-    --orange-lightorange:#F3BC6A;
-    --orange-visualidentityorange:#EEA225;
-    --grey-visualidentitygrey:#666666;
-    --black-offblack:#0D0D0D;
+    --white-offwhite:#E8EAEA;
+    --orange-lightorange:#F2B654;
+    --orange-visualidentityorange:#E49311;
+    --blue-visualidentity:#2A5AF4;
+    --black-offblack:#020027;
+
+    --gray-oldvisualidenty: #676767;
 }
 
 ::before,::after {
@@ -101,8 +103,7 @@ header {
     width: 100%;
     height: 6rem;
     padding: 8px 12%;
-    color: var(--grey-visualidentitygrey);
-    background-color: #fff;
+    background-color: white;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 99999;
@@ -125,7 +126,7 @@ header .nav-bar {
 header .nav-bar .nav-option {
     padding: 1rem;
     text-decoration: none;
-    color: var(--grey-visualidentitygrey);
+    color: #444444;
     transition: 0.3s;
 }
 
@@ -134,7 +135,9 @@ header .nav-bar .nav-option:hover {
 }
 
 header .languages {
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
 }
 
 header .languages li {
@@ -144,6 +147,89 @@ header .languages li {
 header #pt img, 
 header #en img{
     width: 2.1rem;
+    margin: 0.2rem;
+}
+
+.container-menu-nav {
+    display: none;
+    align-items: center;
+    margin: 1.5rem 2rem;
+    cursor: pointer;
+}
+
+.menu-nav {
+    transform: scale(var(--ggs,1))
+}
+.menu-nav,
+.menu-nav::after,
+.menu-nav::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background: currentColor;
+    color: var(--gray-oldvisualidenty);
+}
+
+.menu-nav::after,
+.menu-nav::before {
+    content: "";
+    position: absolute;
+    top: -9px
+}
+
+.menu-nav::after {
+    top: 9px
+}
+
+.options-phone {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+    margin: auto;
+    height: 32rem;
+    width: 100%;
+    padding-top: 6rem;
+    background-color: white;
+    justify-content: center;
+    box-shadow: 2px 0px 10px #000;
+}
+
+.options-phone .nav-option {
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--gray-oldvisualidenty);
+}
+
+.options-phone img {
+    width: 60px;
+}
+
+.options-phone .nav-bar-phone {
+    display: block;
+}
+
+.options-phone .languages-phone {
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
+@media only screen and (max-width: 1120px){
+    .container-menu-nav {
+        display: flex;
+    }
+    header .nav-bar, header .languages {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    header {
+        padding: 8px 6%;
+    }
 }
 
 /* ======================= HOME PAGE ======================= */
@@ -173,20 +259,26 @@ header #en img{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #808080;
+    background-color: var(--gray-oldvisualidenty);
     z-index: -1;
-    opacity: 75%;
+    opacity: 70%;
 }
 
 .home-page .background .home-page-content {
     width: 100%;
     height: 41rem;
     text-align: center;
-    padding: 10rem 0rem;
+    padding: 9rem 0rem;
 }
+
+.home-page .background .home-page-content .home-page-title {
+    height: 6rem;
+}
+
 
 .home-page .background .home-page-content h2 {
     font-size: 3rem;
+    padding: 0 4rem;
 }
 
 .home-page .background .home-page-content p {
@@ -215,14 +307,14 @@ header #en img{
     overflow: hidden;
     line-height: 0;
     z-index: 5;
-    margin-top: 41.1rem;
+    margin-top: 44.1rem;
 }
 
 .custom-shape-divider-bottom-1672270909 svg {
     position: relative;
     display: block;
     width: calc(200% + 1.3px);
-    height: 100px;
+    height: 50px;
     transform: rotateY(180deg);
 }
 
@@ -238,14 +330,14 @@ header #en img{
     overflow: hidden;
     line-height: 0;
     z-index: 4;
-    margin-top: 41rem;
+    margin-top: 44rem;
 }
 
 .custom-shape-divider-bottom-1672270931 svg {
     position: relative;
     display: block;
     width: calc(185% + 1.3px);
-    height: 100px;
+    height: 50px;
     transform: rotateY(180deg);
 }
 
@@ -372,11 +464,13 @@ header #en img{
 
 /* ======================= Contador ======================= */
 .container-demo {
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .container-demo .title-demo {
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
 }
 
 .container-demo .timer-demo {
@@ -390,12 +484,12 @@ header #en img{
 .container-demo .demo-hours,
 .container-demo .demo-minutes,
 .container-demo .demo-seconds {
-    background-color: rgba(255, 255, 255, 0.35);
     height: 10rem;
     width: 8rem;
     margin: 0.8rem;
-    border-radius: 1rem;
     padding: 1rem 0;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -411,6 +505,50 @@ header #en img{
     color: var(--white-offwhite);
 }
 
+@media only screen and (max-width: 822px) {
+    .container-demo .title-demo {
+        margin-top: 4rem;
+    }
+
+    .container-demo .timer-demo {
+        height: 9.6rem;
+    }
+
+    .container-demo .demo-days,
+    .container-demo .demo-hours,
+    .container-demo .demo-minutes,
+    .container-demo .demo-seconds {
+        height: 8rem;
+        width: 6.4rem;
+        margin: 0.64rem;
+        padding: 0.8rem 0;
+    }
+
+    .container-demo .timer-demo h1 {
+        font-size: 3.2rem;
+    }
+
+    .container-demo .timer-demo span {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+    .title-demo {
+        margin-top: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .container-demo {
+        transform: scale(0.8);
+    }
+
+    .title-demo {
+        margin-top: 3rem;
+    }
+}
+
 /* ======================= Fotos ======================= */
 
 /* ======================= Júris ======================= */
@@ -419,23 +557,30 @@ header #en img{
 
 
 /* ======================= FAQ ======================= */
-.faq-container {
-    /*
-    display: grid;
-    align-content: center;
-    */
-    height: 50rem;
-    padding: 10% 20%;
+.faq {
+    width: 100%;
     background-color: var(--white-offwhite);
 }
 
-.faq-container h1 {
+.faq .faq-container {
+    height: 50rem;
+    width: 50rem;
+    padding: 9% 0;
+    margin: auto;
+}
+
+.faq .faq-container h1 {
     text-align: center;
     padding: 1rem;
     font-size: 4rem;
 }
 
-.faq-container li {
+.faq .faq-container ul {
+    padding: 0;
+    margin: 0;
+}
+
+.faq .faq-container ul li {
     border-radius: 5px;
     list-style-type: none;
     background-color: white;
@@ -443,7 +588,9 @@ header #en img{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.faq-container li .question {
+.faq .faq-container ul li .question {
+    display: flex;
+    justify-content: space-between;
     padding: 10px 30px;
     margin: 2px 0px;
     border-radius: 5px;
@@ -451,22 +598,22 @@ header #en img{
     cursor: default;
 }
 
-.faq-container .tira {
+.faq .faq-container .tira {
     position: absolute;
     height: 100%;
     width: 10px;
-    background-color: #EEA225;
+    background-color: var(--orange-visualidentityorange);
     border-radius: 5px 0 0 5px;
 }
 
-.faq-container p {
-    color: var(--grey-visualidentitygrey);
+.faq .faq-container p {
+    color: var(--gray-oldvisualidenty);
     background-color: white;
     border-radius: 5px;
     margin: 0;
 }
 
-.response-1, .response-2, .response-3, .response-4, .response-5, .response-6, .response-7 {
+.faq .response-1, .faq .response-2, .faq .response-3, .faq .response-4, .faq .response-5, .faq .response-6, .faq .response-7 {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
@@ -474,11 +621,12 @@ header #en img{
     padding: 0 35px;
 }
 
-#seta {
+.faq #seta {
     position: relative;
     padding: 6px;
     box-shadow: 2px -2px 0 0.5px var(--orange-visualidentityorange) inset;
-    margin: 4px;
+    margin: 4px 4px 4px 30px;
+    height: 50%;
     border: solid transparent;
     border-width: 0 0 2px 2px;
     transform: rotate(-45deg);
@@ -486,6 +634,25 @@ header #en img{
     cursor: pointer;
     transition: 0.4s;
 }
+
+@media only screen and (max-width: 880px) {
+    .faq .faq-container {
+        width: 40rem;
+        height: 45rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .faq .faq-container {
+        width: auto;
+        padding: 10% 1rem;
+    }
+    .faq .faq-container ul li span {
+        width: 100%;
+        max-width: 70%;
+    }
+}
+
 
 /* ======================= Equipa ======================= */
 .team-container {
