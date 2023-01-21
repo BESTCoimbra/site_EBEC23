@@ -489,7 +489,7 @@ header #en img{
     margin: 0.8rem;
     padding: 1rem 0;
     border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -557,32 +557,40 @@ header #en img{
 
 
 /* ======================= FAQ ======================= */
-.faq-container {
-    /*
-    display: grid;
-    align-content: center;
-    */
-    height: 50rem;
-    padding: 10% 0;
+.faq {
+    width: 100%;
     background-color: var(--white-offwhite);
 }
 
-.faq-container h1 {
+.faq .faq-container {
+    height: 50rem;
+    width: 50rem;
+    padding: 9% 0;
+    margin: auto;
+}
+
+.faq .faq-container h1 {
     text-align: center;
     padding: 1rem;
     font-size: 4rem;
 }
 
-.faq-container li {
+.faq .faq-container ul {
+    padding: 0;
+    margin: 0;
+}
+
+.faq .faq-container ul li {
     border-radius: 5px;
-    width: 50rem;
     list-style-type: none;
     background-color: white;
     transform: translateY(0.45em);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.faq-container li .question {
+.faq .faq-container ul li .question {
+    display: flex;
+    justify-content: space-between;
     padding: 10px 30px;
     margin: 2px 0px;
     border-radius: 5px;
@@ -590,7 +598,7 @@ header #en img{
     cursor: default;
 }
 
-.faq-container .tira {
+.faq .faq-container .tira {
     position: absolute;
     height: 100%;
     width: 10px;
@@ -598,14 +606,14 @@ header #en img{
     border-radius: 5px 0 0 5px;
 }
 
-.faq-container p {
+.faq .faq-container p {
     color: var(--gray-oldvisualidenty);
     background-color: white;
     border-radius: 5px;
     margin: 0;
 }
 
-.response-1, .response-2, .response-3, .response-4, .response-5, .response-6, .response-7 {
+.faq .response-1, .faq .response-2, .faq .response-3, .faq .response-4, .faq .response-5, .faq .response-6, .faq .response-7 {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
@@ -613,11 +621,12 @@ header #en img{
     padding: 0 35px;
 }
 
-#seta {
+.faq #seta {
     position: relative;
     padding: 6px;
     box-shadow: 2px -2px 0 0.5px var(--orange-visualidentityorange) inset;
-    margin: 4px;
+    margin: 4px 4px 4px 30px;
+    height: 50%;
     border: solid transparent;
     border-width: 0 0 2px 2px;
     transform: rotate(-45deg);
@@ -625,6 +634,25 @@ header #en img{
     cursor: pointer;
     transition: 0.4s;
 }
+
+@media only screen and (max-width: 880px) {
+    .faq .faq-container {
+        width: 40rem;
+        height: 45rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .faq .faq-container {
+        width: auto;
+        padding: 10% 1rem;
+    }
+    .faq .faq-container ul li span {
+        width: 100%;
+        max-width: 70%;
+    }
+}
+
 
 /* ======================= Equipa ======================= */
 .team-container {
