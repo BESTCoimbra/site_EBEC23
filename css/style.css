@@ -22,7 +22,6 @@
     box-sizing: border-box;
 }
 
-
 /* Show it is fixed to the top */
 body {
     background-color: var(--white-offwhite);
@@ -38,7 +37,7 @@ body {
 }
 
 
-/*============================== LOADER ==============================*/
+/*============================== START LOADER ==============================*/
 .loader {
     position: fixed;
     top: 0;
@@ -90,8 +89,9 @@ body {
         visibility: hidden;
     }
 }
+/*============================== END LOADER ==============================*/
 
-/* ======================= HEADER AND STARTING SCREEN ======================= */
+/* ======================= START HEADER AND STARTING SCREEN ======================= */
 a .nav-link {
     text-decoration: none;
     background-color: #0D0D0D;
@@ -231,8 +231,9 @@ header #en img{
         padding: 8px 6%;
     }
 }
+/* ======================= END HEADER AND STARTING SCREEN ======================= */
 
-/* ======================= HOME PAGE ======================= */
+/* ======================= START HOME PAGE ======================= */
 .home-page {
     width: 100%;
     height: 100%;
@@ -344,182 +345,9 @@ header #en img{
 .custom-shape-divider-bottom-1672270931 .shape-fill {
     fill: var(--orange-visualidentityorange)
 }
+/* ======================= END HOME PAGE ======================= */
 
-/* ======================= pyramid ======================= */
-.pyramid {
-    width: 100%;
-    height: 30rem;
-    display:block;
-    align-items: center;
-    background-color: var(--white-offwhite);
-    justify-content: center;
-}
-
-.pyramid .pyramid-title {
-    color: #000;
-    justify-content: center;
-    text-align: center;
-}
-
- mark.orange{
-    color: var(--orange-lightorange);
-    background: none;
- }
-
- .pyramid .pyramid-container{
-    align-items:center;
-    display:flex;
- }
-
- .pyramid .pyramid-container .pyramid-imagebox{
-    display:block;
-    padding-left: 10rem;
- }
-
-.pyramid .pyramid-container .pyramid-imagebox .pyramid-img1 img{
-    align-items:center;
-    background: none;
-    padding-left: 3.5rem;
-    padding-bottom: 0.5rem;
-    width: 20rem;
-    height:13rem;
- }
-
-.pyramid .pyramid-container .pyramid-imagebox .pyramid-img1:hover {
-    transition:.5s;
-    filter: drop-shadow(0 3px 8px rgb(136, 136, 136));
-}
-
- .pyramid .pyramid-container .pyramid-imagebox  .pyramid-img2 img{
-    align-items:center;
-    background: none;
-    padding-left: 1rem;
-    padding-bottom: 0.5rem;
-    width: 22.5rem;
-    height:13rem;
- }
-
- .pyramid .pyramid-container .pyramid-imagebox .pyramid-img2:hover {
-    transition:.5s;
-    filter: drop-shadow(0 3px 8px rgb(136, 136, 136));
-}
-
-
-
- .pyramid .pyramid-container .pyramid-text1 {
-    align-items:right;
-    padding-left: 10rem;
-    font-size: 150%;
-}
-
-/* ======================= Horário ======================= */
-.schedule h1 {
-    text-align: center;
-}
-
-.schedule .schedule-box {
-    padding: 3px;
-    width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: end;
-}
-
-.schedule .schedule-box .button-box {
-    position: absolute;
-}
-
-.schedule .schedule-box .button-box .button-div {
-    display: flex;
-    justify-content: end;
-}
-
-.schedule .schedule-box .my-button {
-    border-radius: 25px;
-    width: 50px;
-    height: 50px;
-    background-color: var(--orange-visualidentityorange);
-    border: none;
-    cursor: pointer;
-    position: relative;
-  }
-  
-
-.plus {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-  
-.plus-line {
-    width: 20px;
-    height: 3px;
-    background-color: var(--white-offwhite);
-    position: absolute;
-}
-  
-.plus-line-horizontal {
-    transform: rotate(0deg);
-}
-  
-.plus-line-vertical {
-    transform: rotate(90deg);
-}
-
-.my-button:hover {
-    background-color: var(--white-offwhite);
-}
-
-.my-button:hover .plus-line {
-    background-color: var(--orange-visualidentityorange);
-}
-
-.dropdown {
-    border-radius: 25px;
-    width: 300px;
-    height: 100px;
-    background-color: var(--orange-visualidentityorange);
-    display: none;
-    flex-direction: column;
-}
-  
-.top-section {
-    flex: 1;
-    background-color: var(--orange-visualidentityorange);
-    text-align: center;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    color: var(--white-offwhite);
-}
-  
-.bottom-section {
-    flex: 1;
-    background-color: var(--orange-visualidentityorange);
-    text-align: center;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    color: var(--white-offwhite);
-}
-
-.top-section:hover {
-    background-color: var(--white-offwhite);
-    color: var(--orange-visualidentityorange);
-}
-
-.bottom-section:hover {
-    background-color: var(--white-offwhite);
-    color: var(--orange-visualidentityorange);
-}
-
-
-/* ======================= Categorias ======================= */
-
-/* ======================= Contador ======================= */
+/* ======================= START CONTADOR ======================= */
 .container-demo {
     padding: 2rem 0;
 }
@@ -605,12 +433,198 @@ header #en img{
         margin-top: 3rem;
     }
 }
+/* ======================= END CONTADOR ======================= */
 
-/* ======================= Fotos ======================= */
+/* ======================= START PYRAMID ======================= */
+.pyramid {
+    width: 100%;
+    display:block;
+    padding: 8rem 1rem;
+    align-items: center;
+    background-color: var(--white-offwhite);
+    justify-content: center;
+}
 
-/* ======================= Júris ======================= */
+.pyramid .pyramid-title {
+    color: #000;
+    justify-content: center;
+    text-align: center;
+}
 
-/* ======================= Parceiros ======================= */
+.pyramid .pyramid-title mark.orange {
+    color: var(--orange-lightorange);
+    background: none;
+}
+
+.pyramid .pyramid-container {
+    align-items:center;
+    display:flex;
+}
+
+.pyramid .pyramid-container .pyramid-imagebox {
+    display:block;
+    padding-left: 10rem;
+}
+
+.pyramid .pyramid-container .pyramid-imagebox .pyramid-img1 img {
+    align-items:center;
+    background: none;
+    padding-left: 3.5rem;
+    padding-bottom: 0.5rem;
+    width: 20rem;
+    height:13rem;
+ }
+
+.pyramid .pyramid-container .pyramid-imagebox .pyramid-img1:hover {
+    transition:.5s;
+    filter: drop-shadow(0 3px 8px rgb(136, 136, 136));
+}
+
+.pyramid .pyramid-container .pyramid-imagebox  .pyramid-img2 img{
+    align-items:center;
+    background: none;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    width: 22.5rem;
+    height:13rem;
+}
+
+.pyramid .pyramid-container .pyramid-imagebox .pyramid-img2:hover {
+    transition:.5s;
+    filter: drop-shadow(0 3px 8px rgb(136, 136, 136));
+}
+
+.pyramid .pyramid-container .pyramid-text1 {
+    align-items:right;
+    padding-left: 10rem;
+    font-size: 150%;
+}
+
+.pyramid .pyramid-container .pyramid-text2 {
+    align-items:right;
+    padding-left: 10rem;
+    font-size: 150%;
+}
+/* ======================= END PYRAMID ======================= */
+
+/* ======================= START CATEGORIAS ======================= */
+.categorias {
+
+}
+/* ======================= END CATEGORIAS ======================= */
+
+/* ======================= START HORÁRIO ======================= */
+.schedule h1 {
+    text-align: center;
+}
+
+.schedule .schedule-box {
+    padding: 3px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.schedule .schedule-box .button-box {
+    position: absolute;
+}
+
+.schedule .schedule-box .button-box .button-div {
+    display: flex;
+    justify-content: end;
+}
+
+.schedule .schedule-box .button-box .my-button {
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--orange-visualidentityorange);
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+
+.schedule .schedule-box .button-box .my-button .plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+  
+.schedule .schedule-box .button-box .my-button .plus .plus-line {
+    width: 20px;
+    height: 3px;
+    background-color: var(--white-offwhite);
+    position: absolute;
+}
+  
+.schedule .schedule-box .button-box .my-button .plus .plus-line-horizontal {
+    transform: rotate(0deg);
+}
+  
+.schedule .schedule-box .button-box .my-button .plus .plus-line-vertical {
+    transform: rotate(90deg);
+}
+
+.schedule .schedule-box .button-box .my-button:hover {
+    background-color: var(--white-offwhite);
+}
+
+.schedule .schedule-box .button-box .my-button:hover .plus-line {
+    background-color: var(--orange-visualidentityorange);
+}
+
+.schedule .schedule-box .button-box .dropdown {
+    border-radius: 25px;
+    width: 300px;
+    height: 100px;
+    background-color: var(--orange-visualidentityorange);
+    display: none;
+    flex-direction: column;
+}
+  
+.schedule .schedule-box .button-box .dropdown .top-section {
+    flex: 1;
+    background-color: var(--orange-visualidentityorange);
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: var(--white-offwhite);
+}
+  
+.schedule .schedule-box .button-box .dropdown .bottom-section {
+    flex: 1;
+    background-color: var(--orange-visualidentityorange);
+    text-align: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: var(--white-offwhite);
+}
+
+.schedule .schedule-box .button-box .dropdown .top-section:hover {
+    background-color: var(--white-offwhite);
+    color: var(--orange-visualidentityorange);
+}
+
+.schedule .schedule-box .button-box .dropdown .bottom-section:hover {
+    background-color: var(--white-offwhite);
+    color: var(--orange-visualidentityorange);
+}
+/* ======================= END HORÁRIO ======================= */
+
+/* ======================= START FOTOS ======================= */
+/* ======================= END FOTOS ======================= */
+
+/* ======================= START JÚRIS ======================= */
+/* ======================= END JÚRIS ======================= */
+
+/* ======================= START PARCEIROS ======================= */
 .partners-container {
     height: 60rem;
     padding: 8rem;
@@ -625,18 +639,19 @@ header #en img{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .circles-container .circle {
+}
+
+.circles-container .circle {
     width: 100px;
     height: 100px;
     border-radius: 100%;
     background-image: url("path-to-image");
     background-color: black;
     margin: 10px;
-  }
+}
+/* ======================= END PARCEIROS ======================= */
 
-/* ======================= FAQ ======================= */
+/* ======================= START FAQ ======================= */
 .faq {
     width: 100%;
     background-color: var(--white-offwhite);
@@ -732,11 +747,10 @@ header #en img{
         max-width: 70%;
     }
 }
+/* ======================= END FAQ ======================= */
 
-
-/* ======================= Equipa ======================= */
+/* ======================= START TEAM ======================= */
 .team-container {
-   
     height: 40rem;
     padding: 8rem;
 }
@@ -757,19 +771,20 @@ header #en img{
     display: grid;
     grid-template-columns: repeat(5, 10rem);
     grid-template-rows: repeat(3, 10rem);
-  }
-  .grid-item img {
+}
+
+.grid-item img {
     width: 100%;
     height: 100%;
-  }
-  
-  .grid-item {
+}
+
+.grid-item {
     border: 1px solid black;
     text-align: center;
     border: 3px solid rgb(26, 226, 0);
-  }
+}
 
-  .team-container .grid-container .nome-membro{
+.team-container .grid-container .nome-membro {
     height: 4rem;
     width: 9.8rem;
     margin-top: 6rem;
@@ -783,9 +798,10 @@ header #en img{
     position: center;
     padding: 0.6rem;
 }
+/* ======================= END TEAM ======================= */
 
-   
- 
-/* ======================= Organização ======================= */
+/* ======================= START ORGANIZAÇÃO ======================= */
+/* ======================= END ORGANIZAÇÃO ======================= */
 
-/* ======================= Footer ======================= */
+/* ======================= START FOOTER ======================= */
+/* ======================= END FOOTER ======================= */
