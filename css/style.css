@@ -16,6 +16,9 @@
     --black-offblack:#020027;
 
     --gray-oldvisualidenty: #676767;
+
+    --fonte-padrao: 'Candara';
+    --fonte-destaque: 'open sans';
 }
 
 ::before,::after {
@@ -278,6 +281,7 @@ header #en img{
 
 
 .home-page .background .home-page-content h2 {
+    font-family: var(--fonte-destaque);
     font-size: 3rem;
     padding: 0 4rem;
 }
@@ -371,7 +375,7 @@ header #en img{
 .container-demo .demo-seconds {
     height: 10rem;
     width: 8rem;
-    margin: 0.8rem;
+    margin: 0.6rem;
     padding: 1rem 0;
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.3);
@@ -509,13 +513,131 @@ header #en img{
 
 /* ======================= START CATEGORIAS ======================= */
 .categorias {
-
+    height: 55rem;
+    background-color: var(--black-offblack);
+    display: flex;
 }
+
+.categorias .categorias-container {
+    width: 50rem;
+    height: 40rem;
+    margin: auto;
+}
+
+.categorias .categorias-container .categorias-title {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.categorias .categorias-container .categorias-title h1 {
+    font-size: 3.5rem;
+    color: var(--white-offwhite);
+    margin-bottom: 0.8rem;
+}
+
+.categorias .categorias-container .categorias-title .line-title {
+    height: 0.4rem;
+    width: 6rem;
+    background-color: var(--orange-visualidentityorange);
+    margin: auto;
+    display: none;
+}
+
+.categorias .categorias-container .cat-bloco {
+    display: flex;
+}
+
+.categorias .categorias-container .cat-bloco .cat-background {
+    margin-top: 2rem;
+    height: 6rem;
+    width: 50rem;
+    position: absolute;
+    background-color: var(--orange-visualidentityorange);
+    z-index: 1;
+}
+
+.categorias .categorias-container .cat-bloco .cat-card {
+    z-index: 2;
+    background-color: var(--white-offwhite);
+    margin: 0 1rem;
+    width: 23rem;
+    text-align: center;
+    padding: 2.5rem 2.2rem 3rem 2.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px)
+}
+
+.categorias .categorias-container .cat-bloco .cat-card h2 {
+    color: var(--orange-visualidentityorange);
+}
+
+.categorias .categorias-container .cat-bloco .cat-card p {
+    padding: 0.6rem 0;
+    font-size: 0.9rem;
+}
+
+.categorias .categorias-container .cat-bloco .cat-card img {
+    width: auto;
+    height: auto;
+}
+
+.categorias .categorias-container .cat-bloco .cat-card h2,
+.categorias .categorias-container .cat-bloco .cat-card img,
+.categorias .categorias-container .cat-bloco .cat-card p {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px)
+}
+
+@media only screen and (max-width: 900px){
+    .categorias {
+        height: 84rem;
+        display: block;
+        padding: 5rem 0;
+    }
+
+    .categorias .categorias-container {
+        width: auto;
+    }
+
+    .categorias .categorias-container .categorias-title .line-title {
+        display: block;
+    }
+
+    .categorias .categorias-container .cat-bloco .cat-background {
+        display: none;
+    }
+
+    .categorias .categorias-container .cat-bloco {
+        display: block;
+    }
+
+    .categorias .categorias-container .cat-bloco .cat-card {
+        margin: 0 auto 2rem auto;
+    }
+}
+
 /* ======================= END CATEGORIAS ======================= */
 
 /* ======================= START HORÁRIO ======================= */
-.schedule h1 {
+.schedule  h2 {
     text-align: center;
+    font-size: 4rem;
+    color: var(--orange-visualidentityorange);
+}
+
+.schedule  p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--orange-lightorange);
+}
+
+.schedule {
+    background-color: var(--white-offwhite);
 }
 
 .schedule .schedule-box {
@@ -535,18 +657,18 @@ header #en img{
     justify-content: end;
 }
 
-.schedule .schedule-box .button-box .my-button {
+.schedule .schedule-box .my-button {
+    margin: 0.4rem;  
     border-radius: 25px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: var(--orange-visualidentityorange);
     border: none;
     cursor: pointer;
     position: relative;
   }
   
-
-.schedule .schedule-box .button-box .my-button .plus {
+.schedule .schedule-box .button-box .plus {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -557,18 +679,18 @@ header #en img{
     cursor: pointer;
 }
   
-.schedule .schedule-box .button-box .my-button .plus .plus-line {
-    width: 20px;
+.schedule .schedule-box .button-box .plus-line {
+    width: 15px;
     height: 3px;
     background-color: var(--white-offwhite);
     position: absolute;
 }
   
-.schedule .schedule-box .button-box .my-button .plus .plus-line-horizontal {
+.schedule .schedule-box .button-box .plus-line-horizontal {
     transform: rotate(0deg);
 }
   
-.schedule .schedule-box .button-box .my-button .plus .plus-line-vertical {
+.schedule .schedule-box .button-box .plus-line-vertical {
     transform: rotate(90deg);
 }
 
@@ -581,20 +703,24 @@ header #en img{
 }
 
 .schedule .schedule-box .button-box .dropdown {
-    border-radius: 25px;
-    width: 300px;
-    height: 100px;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
     background-color: var(--orange-visualidentityorange);
     display: none;
     flex-direction: column;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white-offwhite);
 }
+
   
 .schedule .schedule-box .button-box .dropdown .top-section {
     flex: 1;
     background-color: var(--orange-visualidentityorange);
     text-align: center;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     color: var(--white-offwhite);
 }
   
@@ -602,8 +728,8 @@ header #en img{
     flex: 1;
     background-color: var(--orange-visualidentityorange);
     text-align: center;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     color: var(--white-offwhite);
 }
 
@@ -616,6 +742,15 @@ header #en img{
     background-color: var(--white-offwhite);
     color: var(--orange-visualidentityorange);
 }
+
+.schedule .schedule-box .button-box .dropdown h2:hover {
+    color: var(--orange-visualidentityorange);
+}
+
+.schedule .schedule-box .button-box .dropdown h2:hover {
+    color: var(--orange-visualidentityorange);
+}
+
 /* ======================= END HORÁRIO ======================= */
 
 /* ======================= START FOTOS ======================= */
@@ -804,4 +939,62 @@ header #en img{
 /* ======================= END ORGANIZAÇÃO ======================= */
 
 /* ======================= START FOOTER ======================= */
+.footer {
+    background-color: var(--black-offblack);
+}
+
+.footer .footer-container {
+    padding: 1.5rem 2rem 0.5rem 2rem;
+}
+
+.footer .footer-container .footer-up {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+.footer .footer-container .footer-up .footer-up-left img {
+    width: 100px;
+}
+
+.footer .footer-container .footer-up .footer-up-right {
+    padding: 1rem;
+}
+
+.footer .footer-container .footer-up .footer-up-right img {
+    padding: 0.2rem;
+    width: 24px;
+}
+
+.footer .footer-container .footer-down {
+    color: white;
+}
+
+.footer .footer-container .footer-down .footer-line {
+    background-color: white;
+    width: 100%;
+    height: 0.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.footer .footer-container .footer-down p {
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 640px) {
+    .footer .footer-container{
+        text-align: center;
+    }
+    .footer .footer-container .footer-up {
+        display: block;
+        padding-bottom: 1rem;
+    }
+    .footer .footer-container .footer-up .footer-up-right {
+        padding: 0.5rem;
+    }
+
+    .footer .footer-container .footer-up .footer-up-left img {
+        width: 120px;
+    }
+}
 /* ======================= END FOOTER ======================= */
