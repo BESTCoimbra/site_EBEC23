@@ -509,8 +509,113 @@ header #en img{
 
 /* ======================= START CATEGORIAS ======================= */
 .categorias {
-
+    height: 55rem;
+    background-color: var(--black-offblack);
+    display: flex;
 }
+
+.categorias .categorias-container {
+    width: 50rem;
+    height: 40rem;
+    margin: auto;
+}
+
+.categorias .categorias-container .categorias-title {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.categorias .categorias-container .categorias-title h1 {
+    font-size: 3.5rem;
+    color: var(--white-offwhite);
+    margin-bottom: 0.8rem;
+}
+
+.categorias .categorias-container .categorias-title .line-title {
+    height: 0.4rem;
+    width: 6rem;
+    background-color: var(--orange-visualidentityorange);
+    margin: auto;
+    display: none;
+}
+
+.categorias .categorias-container .cat-bloco {
+    display: flex;
+}
+
+.categorias .categorias-container .cat-bloco .cat-background {
+    margin-top: 2rem;
+    height: 6rem;
+    width: 50rem;
+    position: absolute;
+    background-color: var(--orange-visualidentityorange);
+    z-index: 1;
+}
+
+.categorias .categorias-container .cat-bloco .cat-card {
+    z-index: 2;
+    background-color: var(--white-offwhite);
+    margin: 0 1rem;
+    width: 23rem;
+    text-align: center;
+    padding: 2.5rem 2.2rem 3rem 2.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px)
+}
+
+.categorias .categorias-container .cat-bloco .cat-card h2 {
+    color: var(--orange-visualidentityorange);
+}
+
+.categorias .categorias-container .cat-bloco .cat-card p {
+    padding: 0.6rem 0;
+    font-size: 0.9rem;
+}
+
+.categorias .categorias-container .cat-bloco .cat-card img {
+    width: auto;
+    height: auto;
+}
+
+.categorias .categorias-container .cat-bloco .cat-card h2,
+.categorias .categorias-container .cat-bloco .cat-card img,
+.categorias .categorias-container .cat-bloco .cat-card p {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px)
+}
+
+@media only screen and (max-width: 900px){
+    .categorias {
+        height: 84rem;
+        display: block;
+        padding: 5rem 0;
+    }
+
+    .categorias .categorias-container {
+        width: auto;
+    }
+
+    .categorias .categorias-container .categorias-title .line-title {
+        display: block;
+    }
+
+    .categorias .categorias-container .cat-bloco .cat-background {
+        display: none;
+    }
+
+    .categorias .categorias-container .cat-bloco {
+        display: block;
+    }
+
+    .categorias .categorias-container .cat-bloco .cat-card {
+        margin: 0 auto 2rem auto;
+    }
+}
+
 /* ======================= END CATEGORIAS ======================= */
 
 /* ======================= START HORÁRIO ======================= */
