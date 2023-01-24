@@ -25,6 +25,24 @@
     box-sizing: border-box;
 }
 
+/*
+-------> CTRL+F para ir para as secções:
+START LOADER
+START HEADER AND STARTING SCREEN
+START HOME PAGE
+START CONTADOR
+START PYRAMID
+START CATEGORIAS
+START HORÁRIO
+START FOTOS
+START JÚRIS
+START PARCEIROS
+START FAQ
+START TEAM
+START ORGANIZAÇÃO
+START FOOTER
+*/
+
 /* Show it is fixed to the top */
 body {
     background-color: var(--white-offwhite);
@@ -122,7 +140,7 @@ header {
     position: fixed;
     width: 100%;
     height: 6rem;
-    padding: 8px 12%;
+    padding: 8px 7rem;
     font-family: var(--fonte-padrao);
     background-color: white;
     justify-content: space-between;
@@ -136,7 +154,8 @@ header .options {
 
 header .logo-header img {
     width: auto;
-    height: 80px;
+    height: 90px;
+    translate: 0 -0.1rem;
 }
 
 header .nav-bar {
