@@ -314,13 +314,6 @@ header #en img{
     translate: 1.5rem -1.5rem;
 }
 
-.home-page .home-page-background .home-page-content-left .home-page-element-back {
-    height: 25rem;
-    bottom: 0;
-    left: 0;
-    background-color: var(--blue-visualidentity);
-}
-
 .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element .home-page-element-text {
     width: 200%;
     padding: 13rem 3rem;
@@ -339,15 +332,14 @@ header #en img{
     position: relative;
 }
 
-.home-page .home-page-background .home-page-content-right .home-page-content-right-img {
-    width: 100%;
-    bottom: 0;
+.home-page .home-page-background .home-page-content-right-img {
     padding: 2rem;
     position: absolute;
-    text-align: end;
+    bottom: 0;
+    right: 0;
 }
 
-.home-page .home-page-background .home-page-content-right .home-page-content-right-img img {
+.home-page .home-page-background .home-page-content-right-img img {
     width: 150px;
     height: auto;
 }
@@ -368,6 +360,78 @@ header #en img{
     background-color: #fff;
 }
 */
+
+@media only screen and (max-width: 890px) {
+    .home-page .home-page-background {
+        display: block;
+    }
+
+    .home-page .home-page-background .home-page-content-left {
+        width: 100%;
+    }
+
+    .home-page .home-page-background .home-page-content-left .home-page-title {
+        position: relative;
+        padding-top: 5rem;
+    }
+
+    .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element .home-page-element-text {
+        width: 40rem;
+        padding: 2rem 2rem;
+    }
+
+    .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element .home-page-element-front {
+        translate: 1.5rem 1.5rem;
+    }
+
+    .home-page .home-page-background .home-page-content-right {
+        width: 100%;
+    }
+
+    .home-page .home-page-background .home-page-content-right .container-demo {
+        padding: 0.5rem;
+    }
+
+    .home-page .home-page-background .home-page-content-right .container-demo h4 {
+        margin-top: 0.5rem;
+    }
+
+    .home-page .home-page-background .home-page-content-right-img img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .home-page .home-page-background .home-page-content-left .home-page-title {
+        padding-top: 6.5rem;
+        left: 4.5rem;
+    }
+
+    .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element {
+        width:35%;
+    }
+
+    .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element .home-page-element-front {
+        translate: 1rem 1rem;
+    }
+
+    .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element .home-page-element-text {
+        width: 20rem;
+    }
+
+    .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element .home-page-element-text h1 {
+        font-size: 2rem;
+    }
+
+    .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element .home-page-element-text p {
+        font-size: 0.65rem;
+    }
+
+    .home-page .home-page-background .home-page-content-right .container-demo h4 {
+        font-size: 1rem;margin-bottom: 0;
+    }
+}
 
 /* ======================= END HOME PAGE ======================= */
 
@@ -390,7 +454,7 @@ header #en img{
 }
 
 .container-demo .timer-demo {
-    height: 10em;
+    height: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -435,47 +499,31 @@ header #en img{
     color: var(--white-offwhite);
 }
 
-@media only screen and (max-width: 822px) {
+@media only screen and (max-width: 1120px) {
     .container-demo .title-demo {
         margin-top: 4rem;
     }
 
     .container-demo .timer-demo {
-        height: 9.6rem;
+        height: 8rem;
     }
 
     .container-demo .demo-days,
     .container-demo .demo-hours,
     .container-demo .demo-minutes,
     .container-demo .demo-seconds {
-        height: 8rem;
-        width: 6.4rem;
-        margin: 0.64rem;
-        padding: 0.8rem 0;
+        height: 6rem;
+        width: 4.6rem;
+        margin: 0.2rem;
+        padding: 0.7rem 0;
     }
 
     .container-demo .timer-demo h1 {
-        font-size: 3.2rem;
+        font-size: 2.2rem;
     }
 
     .container-demo .timer-demo span {
-        font-size: 1.2rem;
-    }
-}
-
-@media only screen and (max-width: 695px) {
-    .title-demo {
-        margin-top: 4.5rem;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    .container-demo {
-        transform: scale(0.8);
-    }
-
-    .title-demo {
-        margin-top: 3rem;
+        font-size: 0.7rem;
     }
 }
 /* ======================= END CONTADOR ======================= */
