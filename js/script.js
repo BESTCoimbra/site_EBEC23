@@ -69,3 +69,18 @@ function openDropdownResponse() {
 
 
 }
+
+function pyramidresponse(idp){
+	if(idp==1){
+	onclick=document.getElementById('text1').style.display='none';
+	document.getElementById('text2').style.display='block';
+	document.getElementById('button1').style.backgroundColor='black';
+	document.getElementById('button2').style.backgroundColor='white';
+	}
+	else{
+		onclick=document.getElementById('text2').style.display='none';
+		document.getElementById('text1').style.display='block';
+		document.getElementById('button2').style.backgroundColor='black';
+		document.getElementById('button1').style.backgroundColor='white';
+	}
+}

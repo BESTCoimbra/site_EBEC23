@@ -142,30 +142,27 @@
             <div class="pyramid-container">
                 <div class= "pyramid-imagebox">
                     <div class="pyramid-img1">
-                        <img src="img\icons\EBEC_Challenge_pyramid_top.png" onclick="document.getElementById('text2').style.display='none';document.getElementById('text1').style.display='block'">
+                        <img src="img\icons\EBEC_Challenge_pyramid_top.png" onclick="pyramidresponse(1)">
                     </div>
                     <div class="pyramid-img2">
-                        <img src="img\icons\EBEC_Challenge_pyramid_bottom.png" onclick="document.getElementById('text1').style.display='none';document.getElementById('text2').style.display='block'" >
+                        <img src="img\icons\EBEC_Challenge_pyramid_bottom.png" onclick="pyramidresponse(2)" >
                     </div>
                 </div>
-                <div class="pyramid-text1" id="text1">
-                    <p><strong>EBEC Challenge Coimbra</strong></p>
-                    <p>Uma Ronda Local da EBEC é um evento organizado por um grupo local do BEST e corresponde à primeira fase da European BEST Enginnering Competition(EBEC).<br>
-                    A EBEC Coimbra vai acontecer nos dias X,Y e Z de Março de 2023 e é caracterizada por ser uma competição de 24 horas, completamente gratuita e aberta a todos os estudantes da FCTUC</p>
-                </div>
-                <div class="pyramid-text2" id="text2" style="display:none">
-                    <p><strong>EBEC Iberia</strong></p>
-                    <p>Uma Ronda Regional da EBEC é o evento que junta as equipas vencedoras das Rondas Locais<br>
-                       A EBEC Iberia vai acontecer nos dias X e Y de Maio de 2023,em Z, e contará com as equipas vencedoras das Rondas Locais em Coimbra, Lisboa, Porto, Aveiro, Almdada e Madrid Carlos III</p>
-                </div>
+                    <div class="pyramid-button">
+                        <button class="button1" id="button1" onclick="pyramidresponse(1)"> </button>
+                        <button class="button2" id="button2" onclick="pyramidresponse(2)"></button>
+                    </div>    
+                        <div class="pyramid-text1" id="text1">
+                            <p class="sbt1"><strong>EBEC Challenge Coimbra</strong></p>
+                            <p>Uma Ronda Local da EBEC é um evento organizado por um grupo local do BEST e corresponde à primeira fase da European BEST Enginnering Competition(EBEC).<br>
+                            A EBEC Coimbra vai acontecer nos dias X,Y e Z de Março de 2023 e é caracterizada por ser uma competição de 24 horas, completamente gratuita e aberta a todos os estudantes da FCTUC</p>
+                        </div>
+                        <div class="pyramid-text2" id="text2" style="display:none">
+                            <p class="sbt2"><strong>EBEC Iberia</strong></p>
+                            <p>Uma Ronda Regional da EBEC é o evento que junta as equipas vencedoras das Rondas Locais<br>
+                            A EBEC Iberia vai acontecer nos dias X e Y de Maio de 2023,em Z, e contará com as equipas vencedoras das Rondas Locais em Coimbra, Lisboa, Porto, Aveiro, Almdada e Madrid Carlos III</p>
+                        </div>   
             </div>    
-                <!--<img src="img\icons\EBEC_Challenge_pyramid.png" onclick="document.getElementById('text').style.display='block'">
-                    <div id="text" style="display:none; vertical-align:right;font-size: 150%">This is the text that appears when the image is clicked.</div>
-                    <div class="pyramid-text1">
-                    <p><strong>EBEC Challenge Coimbra</strong></p>
-                    <p>Uma Ronda Local da EBEC é um evento organizado por um grupo local do BEST e corresponde à primeira fase da European BEST Enginnering Competition(EBEC).
-                    A EBEC Coimbra vai acontecer nos dias X,Y e Z de Março de 2023 e é caracterizada por ser uma competição de 24 horas, completamente gratuita e aberta a todos os estudantes da FCTUC</p>
-                </div>-->
         </section>
         <!-- ==================== END EBEC PYRAMID ======================= -->
         <!-- ==================== START CATEGORIAS ======================= -->
