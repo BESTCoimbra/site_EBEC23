@@ -859,6 +859,198 @@ header #en img{
     color: var(--orange-visualidentityorange);
 }
 
+@media only screen and (max-width: 2560px) {
+    .schedule  h2 {
+        font-size: 100px;
+    }
+    
+    .schedule  p {
+        font-size: 40px;
+    }
+
+    .schedule .schedule-box .img-box img{
+        width: 1920px;
+        height: 1300px;
+    }
+
+    .schedule .schedule-box {
+        width: 1920px;
+    }
+
+    .schedule .schedule-box .my-button {
+        border-radius: 100px;
+        width: 125px;
+        height: 125px;
+    }
+
+    .schedule .schedule-box .button-box .plus-line {
+        width: 45px;
+        height: 7px;
+    }
+
+    .schedule .schedule-box .button-box .dropdown {
+        border-radius: 40px;
+        width: 300px;
+        height: 100px;
+        font-size: 2rem;
+    }
+    
+      
+    .schedule .schedule-box .button-box .dropdown .top-section {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+      
+    .schedule .schedule-box .button-box .dropdown .bottom-section {
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+}
+
+@media only screen and (max-width: 2020px) {
+    .schedule  h2 {
+        font-size: 80px;
+    }
+    
+    .schedule  p {
+        font-size: 32px;
+    }
+
+    .schedule .schedule-box .img-box img{
+        width: 1536px;
+        height: 1040px;
+    }
+
+    .schedule .schedule-box {
+        width: 1536px;
+    }
+
+    .schedule .schedule-box .my-button {
+        border-radius: 80px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .schedule .schedule-box .button-box .plus-line {
+        width: 36px;
+        height: 5.6px;
+    }
+
+    .schedule .schedule-box .button-box .dropdown {
+        border-radius: 36px;
+        width: 240px;
+        height: 80px;
+        font-size: 1.6rem;
+    }
+    
+      
+    .schedule .schedule-box .button-box .dropdown .top-section {
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+    }
+      
+    .schedule .schedule-box .button-box .dropdown .bottom-section {
+        border-bottom-left-radius: 32px;
+        border-bottom-right-radius: 32px;
+    }
+}
+
+@media only screen and (max-width: 1636px) {
+    .schedule  h2 {
+        font-size: 64px;
+    }
+    
+    .schedule  p {
+        font-size: 25.6px;
+    }
+
+    .schedule .schedule-box .img-box img{
+        width: 1228.8px;
+        height: 832px;
+    }
+
+    .schedule .schedule-box {
+        width: 1228.8px;
+    }
+
+    .schedule .schedule-box .my-button {
+        border-radius: 64px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .schedule .schedule-box .button-box .plus-line {
+        width: 28.8px;
+        height: 4.48px;
+    }
+
+    .schedule .schedule-box .button-box .dropdown {
+        border-radius: 28.8px;
+        width: 192px;
+        height: 64px;
+        font-size: 1.28rem;
+    }
+    
+      
+    .schedule .schedule-box .button-box .dropdown .top-section {
+        border-top-left-radius: 25.6px;
+        border-top-right-radius: 25.6px;
+    }
+      
+    .schedule .schedule-box .button-box .dropdown .bottom-section {
+        border-bottom-left-radius: 25.6px;
+        border-bottom-right-radius: 25.6px;
+    }
+}
+
+@media only screen and (max-width: 1328.8px) {
+    .schedule  h2 {
+        font-size: 51.2px;
+    }
+    
+    .schedule  p {
+        font-size: 20.48px;
+    }
+
+    .schedule .schedule-box .img-box img{
+        width: 983.04px;
+        height: 665.6px;
+    }
+
+    .schedule .schedule-box {
+        width: 983.04px;
+    }
+
+    .schedule .schedule-box .my-button {
+        border-radius: 51.2px;
+        width: 64px;
+        height: 64px;
+    }
+
+    .schedule .schedule-box .button-box .plus-line {
+        width: 23.04px;
+        height: 3.584px;
+    }
+
+    .schedule .schedule-box .button-box .dropdown {
+        border-radius: 23.04px;
+        width: 153.6px;
+        height: 51.2px;
+        font-size: 1.024rem;
+    }
+    
+      
+    .schedule .schedule-box .button-box .dropdown .top-section {
+        border-top-left-radius: 20.48px;
+        border-top-right-radius: 20.48px;
+    }
+      
+    .schedule .schedule-box .button-box .dropdown .bottom-section {
+        border-bottom-left-radius: 20.48px;
+        border-bottom-right-radius: 20.48px;
+    }
+}
+
 /* ======================= END HORÁRIO ======================= */
 
 /* ======================= START FOTOS ======================= */
