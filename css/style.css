@@ -1449,10 +1449,6 @@ header #en img{
     height:26rem;
  }
 
-/*.best .best-container .best-imagebox .best-img1:hover {
-    transition:.5s;
-    filter: drop-shadow(0 3px 8px rgb(136, 136, 136));
-}*/
 
 .best .best-container .best-imagebox .best-button-box{
     text-decoration: none;
@@ -1466,6 +1462,7 @@ header #en img{
     background-color: var(--orange-visualidentityorange);
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
+    transition:.5s;
 }
 .best .best-container .best-imagebox .best-button-box .box {
     position: relative;
@@ -1475,12 +1472,81 @@ header #en img{
     color: var(--white-offwhite);
     font-weight: 500;
     font-size: 1.25rem;
+    transition:.5s;
+}
+
+.best .best-container .best-imagebox .best-button-box:hover{  
+    background-color: var(--white-offwhite);
+} 
+
+.best .best-container .best-imagebox .best-button-box .box:hover {
+    color: var(--orange-visualidentityorange);
 }
 
 .best .best-container .best-text1 {
     align-items:right;
     padding-left: 10rem;
     font-size: 150%;
+}
+
+@media only screen and (max-width: 1350px) {
+    .best .best-container {
+        display:block;
+    }
+    
+    .best .best-container .best-imagebox .best-img1{
+        text-align: center;
+    }
+    
+    .best .best-container .best-text1 {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+
+    .best .best-container .best-text1 p{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .best .best-container .best-imagebox .best-img1 img {
+        width: 20rem;
+        height: 13rem;
+    }
+
+    .best .best-container .best-imagebox .best-button-box{
+        width: 100px;
+        height: 17.5px;
+        border-top-left-radius: 17.5px;
+        border-top-right-radius: 17.5px;
+    }
+
+    .best .best-container .best-imagebox .best-button-box .box {
+        font-size: 0.625rem;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    .best{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .best .best-container .best-imagebox .best-img1 img {
+        width: 18.75rem;
+        height: 12.1875rem;
+    }
+
+    .best .best-container .best-imagebox .best-button-box{
+        width: 100px;
+        height: 17.5px;
+        border-top-left-radius: 17.5px;
+        border-top-right-radius: 17.5px;
+    }
+
+    .best .best-container .best-imagebox .best-button-box .box {
+        font-size: 0.625rem;
+    }
 }
 /* ======================= END BEST ======================= */
 
