@@ -965,6 +965,28 @@ header #en img{
 /* ======================= END FOTOS ======================= */
 
 /* ======================= START JÚRIS ======================= */
+.judges {
+    height: 50 rem;
+    width: 100%;
+    display:block;
+    align-items: center;
+    background-color: #E8EAEA;
+    justify-content: center;
+    font-family: var(--fonte-padrao);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.judges .judges-title {
+    color: #000;
+    justify-content: center;
+    text-align: center;
+}
+
+.judges .judges-title mark.laranja {
+    color: var(--orange-lightorange);
+    background: none;
+}
 /* ======================= END JÚRIS ======================= */
 
 /* ======================= START PARCEIROS ======================= */
