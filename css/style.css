@@ -1289,9 +1289,78 @@ header #en img{
     padding: 0.6rem;
 }
 /* ======================= END TEAM ======================= */
+/* ======================= START BEST ======================= */
+.best {
+    width: 100%;
+    display:block;
+    padding: 8rem 4rem;
+    align-items: center;
+    background-color: var(--white-offwhite);
+    justify-content: center;
+}
 
-/* ======================= START ORGANIZAÇÃO ======================= */
-/* ======================= END ORGANIZAÇÃO ======================= */
+.best .best-title {
+    color: #000;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.best .best-title mark.orange {
+    color: var(--orange-lightorange);
+    background: none;
+}
+
+.best .best-container {
+    align-items:center;
+    display:flex;
+}
+
+.best .best-container .best-imagebox {
+    position:relative;
+}
+
+.best .best-container .best-imagebox .best-img1 img {
+    align-items:center;
+    background: none;
+    width: 40rem;
+    height:26rem;
+ }
+
+/*.best .best-container .best-imagebox .best-img1:hover {
+    transition:.5s;
+    filter: drop-shadow(0 3px 8px rgb(136, 136, 136));
+}*/
+
+.best .best-container .best-imagebox .best-button-box{
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin:auto;
+    width: 200px;
+    height: 35px;
+    background-color: var(--orange-visualidentityorange);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+.best .best-container .best-imagebox .best-button-box .box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-offwhite);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.best .best-container .best-text1 {
+    align-items:right;
+    padding-left: 10rem;
+    font-size: 150%;
+}
+/* ======================= END BEST ======================= */
 
 /* ======================= START FOOTER ======================= */
 .footer {
