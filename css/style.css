@@ -1199,6 +1199,11 @@ header #en img{
     padding-top: 3rem;
  }
 
+ .judges .case_study .judgesct .judgepair1{
+    background: none;
+    display:inline-flex;
+ }
+
  .judges .case_study .judgesct .judge1{
     display:inline-block;
     text-align: center;
@@ -1209,6 +1214,11 @@ header #en img{
     display:inline-block;
     text-align: center;
     align-items: center;
+ }
+
+ .judges .case_study .judgesct .judgepair2{
+    background: none;
+    display:inline-flex;
  }
 
  .judges .case_study .judgesct .judge3{
@@ -1241,6 +1251,11 @@ header #en img{
     padding-top: 3rem;
  }
 
+ .judges .innovative_design .judgesid .judgepair3{
+    background: none;
+    display:inline-flex;
+ }
+
  .judges .innovative_design .judgesid .judge5{
     display:inline-block;
     text-align: center;
@@ -1251,6 +1266,11 @@ header #en img{
     display:inline-block;
     text-align: center;
     align-items: center;
+ }
+
+ .judges .innovative_design .judgesid .judgepair4{
+    background: none;
+    display:inline-flex;
  }
 
  .judges .innovative_design .judgesid .judge7{
@@ -1264,6 +1284,24 @@ header #en img{
     text-align: center;
     align-items: center;
  }
+
+ @media only screen and (max-width: 900px){
+    .judges {
+        height: 70 rem;
+        width: 100%;
+    }
+
+    .judges .case_study .judgesct {
+        background: none;
+        display:inline-block;
+     }
+
+     .judges .innovative_design .judgesid{
+        background: none;
+        display:inline-block;
+     }
+}
+
 /* ======================= END JÚRIS ======================= */
 
 /* ======================= START PARCEIROS ======================= */
