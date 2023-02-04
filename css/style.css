@@ -269,7 +269,12 @@ header #en img{
 
 @media only screen and (max-width: 970px) {
     header {
-        padding: 8px 6%;
+        padding: 8px 4%;
+        height: 4.5rem;
+    }
+
+    header .logo-header img {
+        height: 62px;
     }
 }
 /* ======================= END HEADER AND STARTING SCREEN ======================= */
@@ -349,6 +354,9 @@ header #en img{
     background-color: rgba(0, 0, 0, 0.45);
     text-align: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-page .home-page-background .home-page-content-right-img {
@@ -364,8 +372,7 @@ header #en img{
 }
 
 
-/*
-.home-page .background .home-page-content .button-home {
+.home-page .home-page-content-right .button-home {
     padding: 0.7rem 1.8rem;
     border: none;
     color: #fff;
@@ -374,19 +381,19 @@ header #en img{
     transition: 0.4s;
 }
 
-.home-page .background .home-page-content .button-home:hover {
+.home-page .home-page-content-right .button-home:hover {
     color: var(--orange-visualidentityorange);
     background-color: #fff;
 }
-*/
 
-@media only screen and (max-width: 890px) {
+
+@media only screen and (max-width: 970px) {
+    .home-page {
+        height: 91.5vh;
+    }
     .home-page .home-page-background {
         display: block;
-    }
-
-    .home-page .home-page-background .home-page-content-left {
-        width: 100%;
+        margin-top: 4.5rem;
     }
 
     .home-page .home-page-background .home-page-content-left .home-page-title {
@@ -457,13 +464,12 @@ header #en img{
 /* ======================= START CONTADOR ======================= */
 .container-demo {
     height: 80%;
-    padding: 4rem 0;
-    display: flex;
+    padding: 8rem 0;
 }
 
 .container-demo .container-demo-center {
     display: block;
-    margin: auto;
+    justify-content: center;
 }
 
 .container-demo .title-demo {
@@ -474,6 +480,7 @@ header #en img{
 
 .container-demo .timer-demo {
     height: 10rem;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -519,6 +526,9 @@ header #en img{
 }
 
 @media only screen and (max-width: 1120px) {
+    .container-demo {
+        
+    }
     .container-demo .title-demo {
         margin-top: 4rem;
     }
@@ -833,7 +843,8 @@ header #en img{
 /* ======================= START HORÁRIO ======================= */
 .schedule {
     background-color: var(--white-offwhite);
-    padding: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .schedule  h2 {
@@ -970,7 +981,7 @@ header #en img{
     color: var(--orange-visualidentityorange);
 }
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 900px){
     .schedule .schedule-box, .schedule .schedule-box .img-box img {
         width: 30rem;
     }
@@ -1336,7 +1347,7 @@ header #en img{
 }
 /* ======================= END FAQ ======================= */
 
-/* ======================= START TEAM ======================= */
+/* ======================= START TEAM ======================= 
 .team-container {
     height: 40rem;
     padding: 8rem;
