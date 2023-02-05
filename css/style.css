@@ -612,14 +612,13 @@ header #en img{
 
 /* ======================= START PYRAMID ======================= */
 .pyramid {
-    height: 50 rem;
     width: 100%;
     display:block;
     align-items: center;
     background-color: #E8EAEA;
     justify-content: center;
     font-family: var(--fonte-padrao);
-    padding-top: 14.5rem;
+    padding-top: 9rem;
     padding-bottom: 10rem;
 }
 
@@ -628,6 +627,11 @@ header #en img{
     padding-bottom: 4rem;
     justify-content: center;
     text-align: center;
+}
+
+.pyramid .pyramid-title h1 {
+    font-weight: 600;
+    font-size: 3rem;
 }
 
 .pyramid .pyramid-title mark.orange {
@@ -656,7 +660,7 @@ header #en img{
 .pyramid .pyramid-container .pyramid-imagebox .pyramid-img1 img {
     background: none;
     width: auto;
-    height:8rem;
+    height: 8.6rem;
  }
 
 .pyramid .pyramid-container .pyramid-imagebox .pyramid-img1:hover {
@@ -667,7 +671,7 @@ header #en img{
 .pyramid .pyramid-container .pyramid-imagebox  .pyramid-img2 img{
     background: none;
     width: auto;
-    height:7rem;
+    height: 7.3rem;
 }
 
 .pyramid .pyramid-container .pyramid-imagebox .pyramid-img2:hover {
@@ -677,7 +681,7 @@ header #en img{
 
 .pyramid .pyramid-container .pyramid-button {
     display: block;
-    padding: 0 2rem 0 1.2rem;
+    padding: 0.8rem 2rem 0 3rem;
  }
 
 .pyramid .pyramid-container .pyramid-button .button1 {
@@ -711,6 +715,7 @@ header #en img{
 .pyramid .pyramid-container .pyramid-text1 {
     align-items:right;
     font-size: 110%;
+    padding-right: 1rem;
 }
 
 .pyramid .pyramid-container .pyramid-text1 .sbt1{
@@ -732,10 +737,14 @@ header #en img{
     font-size: 140%;
 }   
 
-@media only screen and (max-width: 963px){
+@media only screen and (max-width: 1020px){
     .pyramid {
-        height: 60 rem;
         width: auto;
+        padding: 9.5rem 3rem 6rem;
+    }
+
+    .pyramid .pyramid-title h1 {
+        font-size: 2rem;
     }
 
     .pyramid .pyramid-container {
@@ -747,9 +756,6 @@ header #en img{
 
     .pyramid .pyramid-container .pyramid-text {
         display: flex;
-    }
-    .pyramid .pyramid-container .pyramid-text .pyramid-button {
-        width: 1rem;
     }
 
     .pyramid .pyramid-container .pyramid-imagebox {
@@ -775,6 +781,7 @@ header #en img{
 
     .pyramid .pyramid-container .pyramid-button {
         display: block;
+        padding: 0 1rem;
      }
 
      .pyramid .pyramid-container .pyramid-text1 {
@@ -792,6 +799,19 @@ header #en img{
     .pyramid .pyramid-container .pyramid-text2 .sbt2{
         font-size: 120%;
     }   
+}
+
+@media only screen and (max-width: 720px) {
+    .pyramid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .pyramid .pyramid-title h1 {
+        font-size: 1.3rem;
+    }
 }
 
 /* ======================= END PYRAMID ======================= */
@@ -842,7 +862,7 @@ header #en img{
 }
 
 .categorias .categorias-container .cat-bloco .cat-card {
-    z-index: 2;
+    z-index: 1;
     background-color: var(--white-offwhite);
     margin: 0 1rem;
     width: 23rem;
@@ -902,6 +922,21 @@ header #en img{
 
     .categorias .categorias-container .cat-bloco .cat-card {
         margin: 0 auto 2rem auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .categorias .categorias-container .cat-bloco .cat-card {
+        width: 20rem;
+        padding: 2rem 2rem 2.5rem 2rem;
+    }
+    
+}
+
+@media only screen and (max-width: 450px) {
+    .categorias .categorias-container .cat-bloco .cat-card {
+        width: 18rem;
+        padding: 1.8rem 1.8rem 2.2rem 1.8rem;
     }
 }
 
@@ -1335,6 +1370,26 @@ header #en img{
     padding: 9% 5rem;
 }
 
+.faq .faq-container .faq-container-right .faq-container-title {
+    display: none;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.faq .faq-container .faq-container-right .faq-container-title h1 {
+    font-size: 3.5rem;
+    color: var(--black-offblack);
+    margin-bottom: 0.8rem;
+}
+
+.faq .faq-container .faq-container-right .faq-container-title .faq-container-line-title {
+    height: 0.4rem;
+    width: 6rem;
+    background-color: var(--orange-visualidentityorange);
+    margin: auto;
+    display: block;
+}
+
 .faq .faq-container .faq-container-right ul {
     padding: 0;
     margin: 0;
@@ -1394,24 +1449,47 @@ header #en img{
     cursor: pointer;
     transition: 0.4s;
 }
-
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 1024px) {
     .faq .faq-container {
-        width: 40rem;
-        height: 45rem;
+        display: block;
+        height: 40rem;
     }
-}
 
-@media only screen and (max-width: 700px) {
-    .faq .faq-container {
+    .faq .faq-container .faq-container-left {
+        display: none;
+    }
+
+    .faq .faq-container .faq-container-left .faq-container-align{
+        display: none;
+    }
+
+    .faq .faq-container .faq-container-right {
         width: auto;
-        padding: 10% 1rem;
     }
-    .faq .faq-container .faq-container-right ul li span {
-        width: 100%;
-        max-width: 70%;
+
+    .faq .faq-container .faq-container-right .faq-container-title {
+        display: block;
     }
 }
+
+@media only screen and (max-width: 760px) {
+    .faq .faq-container .faq-container-right {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .faq .faq-container .faq-container-right {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .faq .faq-container .faq-container-right ul {
+        font-size: 0.8rem;
+    }
+}
+
 /* ======================= END FAQ ======================= */
 
 /* ======================= START TEAM ======================= 

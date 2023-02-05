@@ -180,7 +180,7 @@
                         <p>Case Study consiste num desafio teórico de resolução de problemas que requer analisar, pesquisar, deliberar, testar e apresentar uma solução que se ajuste a um cenário de caso real baseado em recursos realistas dentro de um tempo limitado.</p>
                         <img src="img/categorias/3_CS.jpg" alt="Case Study">
                     </div>
-                    <div class=" card cat-card">
+                    <div class="card cat-card">
                         <h2>Innovative Design</h2>
                         <p>Innovative Design é um desafio prático, onde os participantes devem combinar a sua criatividade e conhecimento para desenvolver novos designs tecnológicos ou melhorar os já existentes. O projeto deve ter impacto técnico, social, ambiental e económico.</p>
                         <img src="img/categorias/3_ID_C_P.png" alt="Innovative Design">
@@ -278,7 +278,7 @@
         </section>
 
         ==================== END JURIS ======================= -->
-        <!-- ==================== START PARCEIROS ======================= -->
+        <!-- ==================== START PARCEIROS ======================= 
         <section class="partners-container">
 
             <div class="title-partners">
@@ -295,7 +295,7 @@
                 <div class="circle"></div>
             </div>
         </section>
-        <!-- ==================== END PARCEIROS ======================= -->
+         ==================== END PARCEIROS ======================= -->
         <!-- ==================== START FAQ ==================== -->
         <section class="faq">
             <div class="faq-container">
@@ -310,6 +310,10 @@
                     
                 </div>
                 <div class="faq-container-right">
+                    <div class="faq-container-title">
+                        <h1>FAQ</h1>
+                        <div class="faq-container-line-title"></div>
+                    </div>
                     <ul>
                         <li onclick="openResponse('1')">
                             <div class="tira"></div>
@@ -539,7 +543,7 @@
 <script src="js/script.js"></script>
 <script src="js/contador.js"></script>
 <script src="js/vanilla.js"></script>
-<script>VanillaTilt.init(document.querySelectorAll(".card"));</script>
+<script>if (window.innerWidth > 1023){VanillaTilt.init(document.querySelectorAll(".card"));}</script>
 
 
 <!-- Bootstrap Code -->
