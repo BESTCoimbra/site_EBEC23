@@ -1630,7 +1630,7 @@ header #en img {
 
 /* ======================= START TEAM ======================= */
 .team {
-  padding: 8rem 0;
+  padding: 8rem 0 10rem;
   background-color: var(--orange-lightorange);
 }
 .team .team-container {
@@ -1681,7 +1681,7 @@ header #en img {
 }
 
 .team .team-container img {
-  width: 12rem;
+  width: 12.5rem;
   height: auto;
   margin-right: 1%;
   float: left;
@@ -1689,6 +1689,43 @@ header #en img {
 
 .team .team-container .team-desc h4 {
   margin: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .team .team-container .team-box {
+        width: 45.5rem;
+    }
+    .team .team-container img {
+        width: 20rem;
+    }
+
+    .team .team-container li {
+        margin: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .team .team-container .team-box {
+        width: 30rem;
+    }
+    .team .team-container img {
+        width: 13.7rem;
+    }
+    .team .team-container li {
+        margin: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .team .team-container .team-box {
+        width: 25rem;
+    }
+    .team .team-container img {
+        width: 11.2rem;
+    }
+    .team .team-container li {
+        margin: 0.55rem;
+    }
 }
 
 /* ======================= END TEAM ======================= */
