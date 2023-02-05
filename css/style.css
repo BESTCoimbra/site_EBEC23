@@ -1685,7 +1685,7 @@ header #en img {
 
 @media only screen and (max-width: 760px) {
     .faq .faq-container {
-        height: 45rem;
+        height: 47rem;
     }
   .faq .faq-container .faq-container-right ul {
     padding-left: 2rem;
@@ -1695,7 +1695,7 @@ header #en img {
 
 @media only screen and (max-width: 540px) {
     .faq .faq-container {
-        height: 41rem;
+        height: auto;
     }
   .faq .faq-container .faq-container-right ul {
     font-size: 0.8rem;
@@ -1835,6 +1835,12 @@ header #en img {
 }
 
 @media only screen and (max-width: 570px) {
+  .team {
+    padding: 4rem 0 5rem;
+  }
+  .team .team-container .team-line {
+    margin: 0 auto 1.5rem;
+  }
   .team .team-container .team-box {
     width: 22rem;
   }
