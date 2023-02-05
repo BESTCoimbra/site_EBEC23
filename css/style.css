@@ -1664,8 +1664,44 @@ header #en img {
 }
 
 .team .team-container li {
+  position: relative;
   display: inline-block;
   margin: 10px;
+  cursor: default;
+}
+
+.team .team-container li .team-desc::after {
+  background: linear-gradient(rgba(0, 0, 0, 0), #000000);
+}
+
+.team .team-container li .team-desc {
+  position: absolute;
+  color: white;
+  width: 100%;
+  bottom: 0;
+  padding: 0.6rem;
+  transition: 0.4s;
+  opacity: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), #000000);
+}
+
+.team .team-container li .team-desc .team-hover {
+  -webkit-transform: translate3d(0, 20%, 0);
+  transform: translate3d(0, 20%, 0);
+  -webkit-transform: translate3d(0, 25%, 0);
+  transform: translate3d(0, 20%, 0);
+  transition: 0.5s;
+}
+
+.team .team-container li:hover .team-desc .team-hover {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.team .team-container li:hover .team-desc {
+  opacity: 1;
 }
 
 .team .team-container li p {
@@ -1692,40 +1728,40 @@ header #en img {
 }
 
 @media only screen and (max-width: 1200px) {
-    .team .team-container .team-box {
-        width: 45.5rem;
-    }
-    .team .team-container img {
-        width: 20rem;
-    }
+  .team .team-container .team-box {
+    width: 45.5rem;
+  }
+  .team .team-container img {
+    width: 20rem;
+  }
 
-    .team .team-container li {
-        margin: 1.2rem;
-    }
+  .team .team-container li {
+    margin: 1.2rem;
+  }
 }
 
 @media only screen and (max-width: 790px) {
-    .team .team-container .team-box {
-        width: 30rem;
-    }
-    .team .team-container img {
-        width: 13.7rem;
-    }
-    .team .team-container li {
-        margin: 0.5rem;
-    }
+  .team .team-container .team-box {
+    width: 30rem;
+  }
+  .team .team-container img {
+    width: 13.7rem;
+  }
+  .team .team-container li {
+    margin: 0.5rem;
+  }
 }
 
 @media only screen and (max-width: 570px) {
-    .team .team-container .team-box {
-        width: 25rem;
-    }
-    .team .team-container img {
-        width: 11.2rem;
-    }
-    .team .team-container li {
-        margin: 0.55rem;
-    }
+  .team .team-container .team-box {
+    width: 22rem;
+  }
+  .team .team-container img {
+    width: 9.8rem;
+  }
+  .team .team-container li {
+    margin: 0.45rem;
+  }
 }
 
 /* ======================= END TEAM ======================= */
