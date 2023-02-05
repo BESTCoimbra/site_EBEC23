@@ -228,10 +228,10 @@ header #en img {
 .options-phone {
   display: none;
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   text-align: center;
   margin: auto;
-  height: 32rem;
+  height: 24rem;
   width: 100%;
   padding-top: 6rem;
   background-color: white;
@@ -269,6 +269,9 @@ header #en img {
   header .nav-bar,
   header .languages {
     display: none;
+  }
+  .options-phone {
+    padding-top: 4.5rem;
   }
 }
 
@@ -1095,6 +1098,19 @@ header #en img {
   .categorias {
     height: 78rem;
   }
+  .categorias .categorias-container .categorias-title h1 {
+    font-size: 1.6rem;
+  }
+  .categorias .categorias-container .categorias-title .line-title {
+    width: 5rem;
+    height: 0.3rem;
+  }
+  .categorias .categorias-container .cat-bloco .cat-card h2 {
+    font-size: 1.2rem;
+  }
+  .categorias .categorias-container .cat-bloco .cat-card p {
+    font-size: 0.8rem;
+  }
   .categorias .categorias-container .cat-bloco .cat-card {
     width: 18rem;
     padding: 1.8rem 1.8rem 2.2rem 1.8rem;
@@ -1706,6 +1722,23 @@ header #en img {
   .faq .faq-container .faq-container-right ul li .question  {
     padding: 7px 30px;
   }
+
+  .faq .faq-container .faq-container-right .faq-container-title {
+    padding: 1rem;
+  }
+
+  .faq .faq-container .faq-container-right .faq-container-title h1 {
+    font-size: 1.6rem;
+    margin: 0.5rem;
+  }
+  .faq
+  .faq-container
+  .faq-container-right
+  .faq-container-title
+  .faq-container-line-title {
+    height: 0.3rem;
+    width: 2rem;
+  }
 }
 
 /* ======================= END FAQ ======================= */
@@ -1837,6 +1870,13 @@ header #en img {
 @media only screen and (max-width: 570px) {
   .team {
     padding: 4rem 0 5rem;
+  }
+  .team .team-container .title-team h1{
+    font-size: 1.6rem;
+  }
+  .team .team-container .team-line {
+    width: 5rem;
+    height: 0.4rem;
   }
   .team .team-container .team-line {
     margin: 0 auto 1.5rem;

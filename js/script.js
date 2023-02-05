@@ -8,14 +8,21 @@
   }
 })();
 
+var navbarPhone = document.querySelector(".options-phone");
 function menuOpen() {
-  var navbarPhone = document.querySelector(".options-phone");
   if (navbarPhone.style.display === "grid") {
     navbarPhone.style.display = "none";
   } else {
     navbarPhone.style.display = "grid";
   }
 }
+/*
+document.body.addEventListener('click', function(event) {
+	if (!navbarPhone.contains(event.target) && navbarPhone.style.display === 'block') {
+		navbarPhone.style.display = 'none';
+	}
+});
+*/
 
 function desativateOpenResponses(id) {
   var response = document.querySelector(".response-" + id);
@@ -96,4 +103,5 @@ window.onscroll = function () {
   } else {
     document.getElementById("back-to-top").style.display = "none";
   }
+  navbarPhone.style.display = "none";
 };
