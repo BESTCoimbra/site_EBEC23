@@ -592,6 +592,79 @@ header #en img {
   }
 }
 
+
+.button-top {
+  position: absolute;
+  position: fixed;
+  bottom: 3rem;
+  right: 1rem;
+  z-index: 999;
+}
+.button-top #back-to-top {
+  display: none;
+}
+
+
+.button-top button {
+  background-color: var(--orange-visualidentityorange);
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-top:hover button {
+  background-color: var(--white-offwhite);
+  border: solid 2px var(--orange-visualidentityorange);
+}
+
+.button-top .arrow {
+  width: 1rem;
+  height: 1rem;
+  box-sizing: border-box;
+  position: absolute;
+  left: 35%;
+  top: 40%;
+  transform: rotate(-45deg);
+}
+
+.button-top .arrow::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-width: 0.2rem 0.2rem 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  transition: 0.2s ease;
+  display: block;
+  transform-origin: 100% 0;
+}
+
+.button-top .arrow:after {
+  content: "";
+  float: left;
+  position: relative;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  border-width: 0 0.17rem 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  transform-origin: 100% 0;
+  transition: 0.2s ease;
+}
+
+.button-top:hover .arrow::after {
+  transform: rotate(45deg);
+  border-color: var(--orange-visualidentityorange);
+  translate: 0 0.09rem;
+  height: 120%;
+}
+.button-top:hover .arrow::before {
+  border-color: var(--orange-visualidentityorange);
+  transform: scale(0.8);
+}
+
 /* ======================= END HOME PAGE ======================= */
 
 /* ======================= START CONTADOR ======================= */
@@ -661,8 +734,6 @@ header #en img {
 }
 
 @media only screen and (max-width: 1120px) {
-  .container-demo {
-  }
   .container-demo .title-demo {
     margin-top: 4rem;
   }
