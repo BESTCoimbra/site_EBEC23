@@ -1624,6 +1624,9 @@ header #en img{
     .best .best-container {
         display:block;
     }
+    .best .best-title {
+        padding-bottom: 2rem;
+    }
     
     .best .best-container .best-imagebox .best-img1{
         text-align: center;
@@ -1640,6 +1643,14 @@ header #en img{
 }
 
 @media only screen and (max-width: 750px) {
+    .best {
+        padding: 6rem 4rem;
+    }
+
+    .best .best-title {
+        padding-bottom: 1.5rem;
+    }
+
     .best .best-container .best-imagebox .best-img1 img {
         width: 20rem;
         height: 13rem;
@@ -1648,8 +1659,6 @@ header #en img{
     .best .best-container .best-imagebox .best-button-box{
         width: 100px;
         height: 17.5px;
-        border-top-left-radius: 17.5px;
-        border-top-right-radius: 17.5px;
     }
 
     .best .best-container .best-imagebox .best-button-box .box {
@@ -1657,10 +1666,13 @@ header #en img{
     }
 }
 
-@media only screen and (max-width: 455px) {
+@media only screen and (max-width: 460px) {
     .best{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 3rem 2rem;
+    }
+
+    .best .best-title {
+        padding-bottom: 0.8rem;
     }
 
     .best .best-container .best-imagebox .best-img1 img {
@@ -1669,14 +1681,19 @@ header #en img{
     }
 
     .best .best-container .best-imagebox .best-button-box{
-        width: 100px;
-        height: 17.5px;
-        border-top-left-radius: 17.5px;
-        border-top-right-radius: 17.5px;
+        width: 130px;
+        height: 15px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
     }
 
     .best .best-container .best-imagebox .best-button-box .box {
         font-size: 0.625rem;
+    }
+    .best .best-container .best-text1 p {
+        font-size: 0.8rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
     }
 }
 /* ======================= END BEST ======================= */
@@ -1737,7 +1754,7 @@ header #en img{
     }
 
     .footer .footer-container .footer-up .footer-up-left img {
-        width: 120px;
+        width: 80px;
     }
 }
 /* ======================= END FOOTER ======================= */
