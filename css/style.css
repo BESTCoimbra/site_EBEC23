@@ -1392,6 +1392,7 @@ header #en img {
 }
 
 .faq .faq-container {
+  background-color: var(--black-offblack);
   height: 45rem;
   width: 100%;
   padding: 0;
@@ -1545,7 +1546,7 @@ header #en img {
   border-radius: 5px 0 0 5px;
 }
 
-.faq .faq-container .faq-container-right p {
+.faq .faq-container .faq-container-right ul p {
   color: var(--gray-oldvisualidenty);
   background-color: white;
   border-radius: 5px;
@@ -1612,6 +1613,9 @@ header #en img {
 }
 
 @media only screen and (max-width: 760px) {
+    .faq .faq-container {
+        height: 45rem;
+    }
   .faq .faq-container .faq-container-right ul {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1619,10 +1623,17 @@ header #en img {
 }
 
 @media only screen and (max-width: 540px) {
+    .faq .faq-container {
+        height: 41rem;
+    }
   .faq .faq-container .faq-container-right ul {
     font-size: 0.8rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .faq .faq-container .faq-container-right ul li .question  {
+    padding: 7px 30px;
   }
 }
 
