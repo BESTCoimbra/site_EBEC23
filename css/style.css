@@ -1646,7 +1646,7 @@ header #en img {
   width: 7rem;
   height: 0.6rem;
   background-color: var(--blue-visualidentity);
-  margin: 0 auto 4rem;
+  margin: 0 auto 2.5rem;
 }
 
 .team .team-container .team-box {
@@ -1687,129 +1687,10 @@ header #en img {
   float: left;
 }
 
-.team .team-container img:after {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: " ";
-  position: absolute;
-  background: rgba(129, 129, 129, 0.1);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+.team .team-container .team-desc h4 {
+  margin: 0;
 }
 
-.team .team-desc {
-  left: auto;
-  bottom: 0;
-  width: 100%;
-  padding: 0 20px;
-  position: absolute;
-  opacity: 0;
-  color: #fff;
-  -webkit-transform: translate3d(0, 10%, 0);
-  transform: translate3d(0, 10%, 0);
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  -ms-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-
-.team-members .team-desc h4 {
-  font-weight: 600;
-  margin: 0 0 10px;
-  color: #fff;
-}
-
-.team-members .team-desc span {
-  display: block;
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.team-members .team-desc h8 {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-transform: lowercase;
-  color: #fff;
-}
-.team-members:hover .team-avatar:after {
-  background: rgba(47, 60, 72, 0.5);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.team-members:hover .team-desc {
-  -webkit-transform: translate3d(0, -15%, 0);
-  transform: translate3d(0, -15%, 0);
-  -webkit-transform: translate3d(0, -20%, 0);
-  transform: translate3d(0, -30%, 0);
-}
-
-.team-members:hover .team-desc {
-  opacity: 1;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-/*
-.team-container {
-    height: 40rem;
-    padding: 8rem;
-}
-
-.team-container h1 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.team-container .equipa-box {
-    width: 50rem; 
-    height: 30rem;
-    background-color: red;
-    margin:auto; 
-}
-
-.team-container .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 10rem);
-    grid-template-rows: repeat(3, 10rem);
-}
-
-.grid-item img {
-    width: 100%;
-    height: 100%;
-}
-
-.grid-item {
-    border: 1px solid black;
-    text-align: center;
-    border: 3px solid rgb(26, 226, 0);
-}
-
-.team-container .grid-container .nome-membro {
-    height: 4rem;
-    width: 9.8rem;
-    margin-top: 6rem;
-    position: absolute;
-    background-color: rgb(26, 226, 0);
-}
-.nome, 
-.cargo{
-    font-size: 12px;
-    font-weight: 600;
-    position: center;
-    padding: 0.6rem;
-}
 /* ======================= END TEAM ======================= */
 /* ======================= START BEST ======================= */
 .best {
