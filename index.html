@@ -26,9 +26,10 @@
     <!-- ==================== STARTING SCREEN ======================= -->
     <div class="main-container">
         <!-- ==================== START HEADER ======================= -->
+        <a id="header"></a>
         <header class="header">
-            <a class="logo-header" href="#">
-                <img src="img/logos/EBEC_Challenge_National&Regional_laranja-01.png" alt="" id="header_logo">
+            <a class="logo-header" href="#header">
+                <img src="img/logos/EBEC_Challenge_National&Regional_laranja-01.png" alt="EBEC_Challenge_National&Regional_laranja" id="header_logo">
             </a>
             <div class="options">
                 <nav class="nav-bar">
@@ -123,16 +124,16 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="button-home" href="#">Inscreve-te já!</button>
+                        <button class="button-home" title="Inscreve-te já no evento" href="#">Inscreve-te já!</button>
                     </div>
                 </div>
                 <div class="home-page-content-right-img">
-                    <img src="img/logos/branco.png" alt="">
+                    <img src="img/logos/branco.png" alt="Simbolo do BEST">
                 </div>
             </div>
         </section>
         <div class="button-top">
-            <button id="back-to-top"><div class="arrow"></div></button>
+            <button id="back-to-top" title="Voltar para a Home-Page"><div class="arrow"></div></button>
         </div>
         <!-- ==================== END HOME PAGE ======================= -->
         <!-- ==================== START EBEC PYRAMID ======================= -->
@@ -143,24 +144,24 @@
             <div class="pyramid-container">
                 <div class= "pyramid-imagebox">
                     <div class="pyramid-img1">
-                        <img src="img\icons\EBEC_Challenge_pyramid_top.png" onclick="pyramidresponse(1)">
+                        <img src="img\icons\EBEC_Challenge_pyramid_top.png" alt="EBEC_Challenge_pyramid_top" onclick="pyramidresponse(1)">
                     </div>
                     <div class="pyramid-img2">
-                        <img src="img\icons\EBEC_Challenge_pyramid_bottom.png" onclick="pyramidresponse(2)" >
+                        <img src="img\icons\EBEC_Challenge_pyramid_bottom.png" alt="EBEC_Challenge_pyramid_bottom" onclick="pyramidresponse(2)" >
                     </div>
                 </div>
                 <div class="pyramid-text">
                     <div class="pyramid-button">
-                        <button class="button1" id="button1" onclick="pyramidresponse(1)"> </button>
-                        <button class="button2" id="button2" onclick="pyramidresponse(2)"></button>
+                        <button class="button1" id="button1" title="See EBEC Challenge Iberia" onclick="pyramidresponse(1)"> </button>
+                        <button class="button2" id="button2" title="See EBEC Challenge Coimbra" onclick="pyramidresponse(2)"></button>
                     </div>
                     <div class="pyramid-text1" id="text1">
                         <p class="sbt1"><strong>EBEC Challenge Coimbra</strong></p>
                         <p>Uma Ronda Local da EBEC é um evento organizado por um grupo local do BEST e corresponde à primeira fase da European BEST Enginnering Competition(EBEC).<br>
                         A EBEC Coimbra vai acontecer nos dias X,Y e Z de Março de 2023 e é caracterizada por ser uma competição de 24 horas, completamente gratuita e aberta a todos os estudantes da FCTUC</p>
                     </div>
-                    <div class="pyramid-text2" id="text2" style="display:none">
-                        <p class="sbt2"><strong>EBEC Iberia</strong></p>
+                    <div class="pyramid-text2" id="text2">
+                        <p class="sbt2"><strong>EBEC Challenge Iberia</strong></p>
                         <p>Uma Ronda Regional da EBEC é o evento que junta as equipas vencedoras das Rondas Locais<br>
                         A EBEC Iberia vai acontecer nos dias X e Y de Maio de 2023,em Z, e contará com as equipas vencedoras das Rondas Locais em Coimbra, Lisboa, Porto, Aveiro, Almdada e Madrid Carlos III</p>
                     </div>
@@ -196,11 +197,11 @@
         <!-- ==================== START HORÁRIO ======================= -->
         <a id="schedule"></a>
         <section class="schedule">
-            <h2><strong>Horário</strong></h2>
+            <h2>Horário</h2>
             <p>texto secundário para o horário.</p>
             <div class="schedule-box">
                 <div class="img-box">
-                    <img src="img\schedule\schedule.jpg">
+                    <img src="img\schedule\schedule.jpg" alt="Horário">
                 </div>
                 <!--
                     <div class="button-box">
@@ -402,7 +403,7 @@
                 <div class="team-box">
                     <ul>
                         <li>
-                            <img src="img\Equipa\Narciso.jpg">
+                            <img src="img\Equipa\Narciso.jpg" alt="Main Organizer">
                             <div class="team-desc">
                                 <div class="team-hover">
                                     <div>
@@ -416,19 +417,19 @@
                             
                         </li>
                         <li>
-                            <img src="img\Equipa\Eva Santos.jpg">
+                            <img src="img\Equipa\Eva Santos.jpg" alt="Secretary">
                             <div class="team-desc">
                                 <div class="team-hover">
                                     <div>
                                         <h4 class="nome">Eva Santos</h4>
-                                        <span>Secretária</span>
+                                        <span>Secretary</span>
                                     </div>
                                     <a href="#"><img src="img/icons/linkedin.png" alt="Linkdin"></a>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <img src="img\Equipa\Clara Selas.jpg">
+                            <img src="img\Equipa\Clara Selas.jpg" alt="HR Responsible">
                             <div class="team-desc">
                                 <div class="team-hover">
                                     <div>
@@ -440,7 +441,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="img\Equipa\Bea Alves.jpg">
+                            <img src="img\Equipa\Bea Alves.jpg" alt="CR Responsible">
                             <div class="team-desc">
                                 <div class="team-hover">
                                     <div>
@@ -452,7 +453,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="img\Equipa\Bea Pinto.jpg">
+                            <img src="img\Equipa\Bea Pinto.jpg" alt="Marketing Responsible">
                             <div class="team-desc">
                                 <div class="team-hover">
                                     <div>
@@ -464,7 +465,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="img\Equipa\Teresinha Iglésias.jpg">
+                            <img src="img\Equipa\Teresinha Iglésias.jpg" alt="Marketing Responsible">
                             <div class="team-desc">
                                 <div class="team-hover">
                                     <div>
@@ -476,7 +477,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="img\Equipa\Paulo Meira.jpg">
+                            <img src="img\Equipa\Paulo Meira.jpg" alt="IT Responsible">
                             <div class="team-desc">
                                 <div class="team-hover">
                                     <div>
@@ -488,7 +489,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="img\Equipa\Joana Matos.jpg">
+                            <img src="img\Equipa\Joana Matos.jpg" alt="Participants Responsible">
                             <div class="team-desc">
                                 <div class="team-hover">
                                     <div>
@@ -500,7 +501,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="img\Equipa\AngelaCalhau.jpg">
+                            <img src="img\Equipa\AngelaCalhau.jpg" alt="Topic Responsible">
                             <div class="team-desc">
                                 <div class="team-hover">
                                     <div>
@@ -512,7 +513,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="img\Equipa\Guilherme Ribeiro.jpg">
+                            <img src="img\Equipa\Guilherme Ribeiro.jpg" alt="Logistics Responsible">
                             <div class="team-desc">
                                 <div class="team-hover">
                                     <div>
@@ -540,10 +541,10 @@
                     <a class="best-button-box" href="https://best.deec.uc.pt" target="_blank">
                         <div class="box">
                             <p>Saiba mais</p>
-                          </div>
-                        </a>
+                        </div>
+                    </a>
                     <div class="best-img1">
-                        <img src="img\best\fotobest.jpg" >
+                        <img src="img\best\fotobest.jpg" alt="BEST group">
                     </div>
                 </div>
                 <div class="best-text1" id="text1">

@@ -595,7 +595,6 @@ header #en img {
   }
 }
 
-
 .button-top {
   position: absolute;
   position: fixed;
@@ -606,7 +605,6 @@ header #en img {
 .button-top #back-to-top {
   display: none;
 }
-
 
 .button-top button {
   background-color: var(--orange-visualidentityorange);
@@ -844,7 +842,7 @@ header #en img {
   height: 1rem;
   width: 1rem;
   border: 0;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
 }
 
@@ -880,6 +878,7 @@ header #en img {
 }
 
 .pyramid .pyramid-container .pyramid-text2 {
+  display: none;
   align-items: right;
   font-size: 110%;
 }
@@ -956,8 +955,7 @@ header #en img {
 
 @media only screen and (max-width: 720px) {
   .pyramid {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 8.5rem 0 5rem
   }
 
   .pyramid .pyramid-title {
@@ -1096,7 +1094,8 @@ header #en img {
 
 @media only screen and (max-width: 450px) {
   .categorias {
-    height: 78rem;
+    padding: 4rem 0;
+    height: 69rem;
   }
   .categorias .categorias-container .categorias-title h1 {
     font-size: 1.6rem;
@@ -1259,6 +1258,9 @@ header #en img {
 }
 
 @media only screen and (max-width: 900px) {
+  .schedule h2 {
+    font-size: 3rem;
+  }
   .schedule .schedule-box,
   .schedule .schedule-box .img-box img {
     width: 30rem;
@@ -1276,16 +1278,21 @@ header #en img {
 }
 
 @media only screen and (max-width: 550px) {
+  .schedule h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+  }
+  .schedule p {
+    font-size: 1rem;
+  }
   .schedule .schedule-box,
   .schedule .schedule-box .img-box img {
     width: 20rem;
   }
-
   .schedule .schedule-box .button-box .button-div .my-button {
     width: 30px;
     height: 30px;
   }
-
   .schedule .schedule-box .button-box .plus-line {
     width: 12px;
     height: 2px;
@@ -1700,26 +1707,25 @@ header #en img {
 }
 
 @media only screen and (max-width: 760px) {
-    .faq .faq-container {
-        height: 47rem;
-    }
+  .faq .faq-container {
+    height: 47rem;
+  }
   .faq .faq-container .faq-container-right ul {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
-@media only screen and (max-width: 540px) {
-    .faq .faq-container {
-        height: auto;
-    }
+@media only screen and (max-width: 550px) {
+  .faq .faq-container {
+    height: auto;
+  }
   .faq .faq-container .faq-container-right ul {
     font-size: 0.8rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding: 0 1.5rem 4rem;
   }
 
-  .faq .faq-container .faq-container-right ul li .question  {
+  .faq .faq-container .faq-container-right ul li .question {
     padding: 7px 30px;
   }
 
@@ -1732,10 +1738,10 @@ header #en img {
     margin: 0.5rem;
   }
   .faq
-  .faq-container
-  .faq-container-right
-  .faq-container-title
-  .faq-container-line-title {
+    .faq-container
+    .faq-container-right
+    .faq-container-title
+    .faq-container-line-title {
     height: 0.3rem;
     width: 2rem;
   }
@@ -1869,9 +1875,9 @@ header #en img {
 
 @media only screen and (max-width: 570px) {
   .team {
-    padding: 4rem 0 5rem;
+    padding: 3.5rem 0;
   }
-  .team .team-container .title-team h1{
+  .team .team-container .title-team h1 {
     font-size: 1.6rem;
   }
   .team .team-container .team-line {
@@ -2098,7 +2104,7 @@ header #en img {
 }
 
 .footer .footer-container .footer-up .footer-up-left img {
-  width: 100px;
+  width: 130px;
 }
 
 .footer .footer-container .footer-up .footer-up-right {
