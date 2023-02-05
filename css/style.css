@@ -259,8 +259,12 @@ header #en img{
 }
 
 @media only screen and (max-width: 1120px){
+    header {
+        padding: 8px 3rem;
+    }
     .container-menu-nav {
         display: flex;
+        margin: 1.5rem;
     }
     header .nav-bar, header .languages {
         display: none;
@@ -276,6 +280,10 @@ header #en img{
     header .logo-header img {
         height: 62px;
     }
+
+    .container-menu-nav {
+        margin: 1.5rem 1rem;
+    }
 }
 /* ======================= END HEADER AND STARTING SCREEN ======================= */
 
@@ -283,7 +291,7 @@ header #en img{
 .home-page {
     position: relative;
     width: 100%;
-    height:88vh;
+    height:100vh;
     color: #fff;
     display: flex;
     font-family: var(--fonte-padrao);
@@ -296,7 +304,6 @@ header #en img{
     background-attachment: fixed;
     position: relative;
     z-index: 2; 
-    margin-top: 6rem;
     height: 100%;
     width: 100%;
     display: flex;
@@ -386,6 +393,32 @@ header #en img{
     background-color: #fff;
 }
 
+@media only screen and (max-width: 1120px) {
+    .home-page .home-page-background .home-page-content-left .home-page-title {
+        height: 22rem;
+    }
+
+    .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element {
+        width: 30%;
+    }
+
+    .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element .home-page-element-text {
+        width: 250%;
+        padding: 12.5rem 2rem;
+    }
+
+    .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element .home-page-element-text h1 {
+        font-size: 2.5rem;;
+    }
+
+    .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element .home-page-element-front {
+        translate: 1rem -1rem;
+    }
+
+    .home-page .home-page-background .home-page-content-right-img img {
+        width: 120px;
+    }
+}
 
 @media only screen and (max-width: 970px) {
     .home-page {
@@ -397,7 +430,7 @@ header #en img{
     }
 
     .home-page .home-page-background .home-page-content-left {
-        height: 55%;
+        height: 60%;
     }
 
     .home-page .home-page-background .home-page-content-left .home-page-title {
@@ -410,18 +443,18 @@ header #en img{
     }
 
     .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element .home-page-element-front {
-        translate: 1.5rem 1.5rem;
+        translate: 1rem 1rem;
         width: 10rem;
     }
 
     .home-page .home-page-background .home-page-content-left .home-page-title .home-page-element .home-page-element-text {
-        width: 40rem;
+        width: 30rem;
         padding: 2rem 2rem;
     }
 
     .home-page .home-page-background .home-page-content-right {
         width: 100%;
-        height: 45%;
+        height: 40%;
         align-items: flex-start;
     }
 
@@ -440,6 +473,10 @@ header #en img{
 }
 
 @media only screen and (max-width: 680px) {
+    .home-page .home-page-background .home-page-content-left {
+        height: 55%;
+    }
+
     .home-page .home-page-background .home-page-content-left .home-page-title {
         padding-top: 5.5rem;
         left: 1.5em;
@@ -465,6 +502,10 @@ header #en img{
         font-size: 0.65rem;
     }
 
+    .home-page .home-page-background .home-page-content-right {
+        height: 45%;
+    }
+
     .home-page .home-page-background .home-page-content-right .container-demo h4 {
         font-size: 1rem;margin-bottom: 0;
     }
@@ -475,7 +516,7 @@ header #en img{
 /* ======================= START CONTADOR ======================= */
 .container-demo {
     height: 80%;
-    padding: 8rem 0;
+    padding: 12rem 0;
 }
 
 .container-demo .container-demo-center {
@@ -1437,7 +1478,7 @@ header #en img{
     color: #000;
     justify-content: center;
     text-align: center;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
 }
 
 .best .best-title mark.orange {
@@ -1469,11 +1510,11 @@ header #en img{
     left: 50%;
     transform: translateX(-50%);
     margin:auto;
-    width: 200px;
-    height: 35px;
+    width: 300px;
+    height: 30px;
     background-color: var(--orange-visualidentityorange);
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     transition:.5s;
 }
 .best .best-container .best-imagebox .best-button-box .box {
@@ -1483,7 +1524,7 @@ header #en img{
     justify-content: center;
     color: var(--white-offwhite);
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     transition:.5s;
 }
 
@@ -1497,8 +1538,8 @@ header #en img{
 
 .best .best-container .best-text1 {
     align-items:right;
-    padding-left: 10rem;
-    font-size: 150%;
+    padding-left: 5rem;
+    font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 1350px) {
