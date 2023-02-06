@@ -864,6 +864,16 @@ header #en img {
   filter: drop-shadow(0 3px 8px rgb(136, 136, 136));
 }
 
+.pyramid .pyramid-container .pyramid-text .pyramid-text1 span {
+  color: var(--orange-visualidentityorange);
+  font-weight: 600;
+}
+
+.pyramid .pyramid-container .pyramid-text .pyramid-text2 span {
+  color: #659239;
+  font-weight: 600;
+}
+
 .pyramid .pyramid-container .pyramid-text1 {
   align-items: right;
   font-size: 110%;
@@ -1147,14 +1157,14 @@ header #en img {
 .schedule h2 {
   text-align: center;
   font-size: 4rem;
-  color: var(--orange-visualidentityorange);
+  color: var(--white-offwhite);
 }
 
 .schedule p {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--orange-lightorange);
+  color: var(--white-offwhite);
 }
 
 .schedule .schedule-box {
@@ -1808,7 +1818,7 @@ header #en img {
 
 .team .team-container .team-line {
   width: 7rem;
-  height: 0.6rem;
+  height: 0.5rem;
   background-color: var(--blue-visualidentity);
   margin: 0 auto 2.5rem;
 }
