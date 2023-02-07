@@ -1004,6 +1004,8 @@ header #en img {
   font-size: 3.5rem;
   color: var(--white-offwhite);
   margin-bottom: 0.8rem;
+  font-weight: 600;
+  font-family: var(--fonte-padrao);
 }
 
 .categorias .categorias-container .categorias-title .line-title {
@@ -1043,6 +1045,7 @@ header #en img {
 
 .categorias .categorias-container .cat-bloco .cat-card h2 {
   color: var(--orange-visualidentityorange);
+  font-family: var(--fonte-destaque);
 }
 
 .categorias .categorias-container .cat-bloco .cat-card p {
@@ -1088,6 +1091,7 @@ header #en img {
 
   .categorias .categorias-container .cat-bloco .cat-card {
     margin: 0 auto 2rem auto;
+    z-index: 1;
   }
 }
 
@@ -1140,6 +1144,7 @@ header #en img {
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  font-family: var(--fonte-padrao);
 }
 
 .schedule::after {
@@ -1154,11 +1159,28 @@ header #en img {
     z-index: -1;
 }
 
+.schedule .margin-transparent1 {
+  background: linear-gradient(var(--black-offblack), rgba(0, 0, 0, 0));
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: 0;
+}
+
+.schedule .margin-transparent2 {
+  background: linear-gradient(rgba(0, 0, 0, 0),var(--black-offblack));
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+}
+
 .schedule h1 {
   font-size: 3.5rem;
   text-align: center;
   color: var(--white-offwhite);
   margin-bottom: 1.8rem;
+  font-weight: 600;
 }
 
 .schedule p {
@@ -1288,7 +1310,7 @@ header #en img {
 }
 
 @media only screen and (max-width: 900px) {
-  .schedule h2 {
+  .schedule h1 {
     font-size: 3rem;
   }
   .schedule .schedule-box,
@@ -1308,7 +1330,7 @@ header #en img {
 }
 
 @media only screen and (max-width: 550px) {
-  .schedule h2 {
+  .schedule h1 {
     font-size: 1.6rem;
     margin-bottom: 0.2rem;
   }
@@ -1317,7 +1339,9 @@ header #en img {
   }
   .schedule .schedule-box,
   .schedule .schedule-box .img-box img {
-    width: 20rem;
+    height: auto;
+    width: 95%;
+    margin: 0.5rem auto;
   }
   .schedule .schedule-box .button-box .button-div .my-button {
     width: 30px;
@@ -1513,6 +1537,7 @@ header #en img {
 .faq {
   width: 100%;
   background-color: var(--white-offwhite);
+  font-family: var(--fonte-padrao);
 }
 
 .faq .faq-container {
@@ -1808,6 +1833,7 @@ header #en img {
 .team {
   padding: 8rem 0 10rem;
   background-color: var(--orange-lightorange);
+  font-family: var(--fonte-padrao);
 }
 .team .team-container {
   display: block;
@@ -1817,6 +1843,7 @@ header #en img {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .team .team-container .team-line {
@@ -1963,6 +1990,7 @@ header #en img {
   align-items: center;
   background-color: var(--white-offwhite);
   justify-content: center;
+  font-family: var(--fonte-padrao);
 }
 
 .best .best-title {
@@ -1974,6 +2002,7 @@ header #en img {
 
 .best .best-title h1 {
   font-size: 3rem;
+  font-weight: 600;
 }
 
 .best .best-title mark.orange {
@@ -2038,6 +2067,10 @@ header #en img {
   padding-left: 3rem;
   font-size: 1.2rem;
   width: 55%;
+}
+
+.best .best-container .best-text1 h5 {
+  font-family: var(--fonte-destaque);
 }
 
 @media only screen and (max-width: 1350px) {
