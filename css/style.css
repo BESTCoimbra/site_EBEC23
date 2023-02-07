@@ -1814,6 +1814,7 @@ header #en img {
   }
 
   .faq .faq-container .faq-container-right .faq-container-title h1 {
+    font-weight: 600;
     font-size: 1.6rem;
     margin: 0.5rem;
   }
