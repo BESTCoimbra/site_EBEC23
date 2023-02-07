@@ -1154,10 +1154,11 @@ header #en img {
     z-index: -1;
 }
 
-.schedule h2 {
+.schedule h1 {
+  font-size: 3.5rem;
   text-align: center;
   color: var(--white-offwhite);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .schedule p {
@@ -1747,6 +1748,7 @@ header #en img {
 
   .faq .faq-container .faq-container-right {
     width: auto;
+    background-color: var(--black-offblack);
   }
 
   .faq .faq-container .faq-container-right ul {
@@ -1968,6 +1970,10 @@ header #en img {
   justify-content: center;
   text-align: center;
   padding-bottom: 3rem;
+}
+
+.best .best-title h1 {
+  font-size: 3rem;
 }
 
 .best .best-title mark.orange {
