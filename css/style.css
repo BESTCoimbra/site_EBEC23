@@ -2081,6 +2081,11 @@ header #en img {
   }
   .best .best-title {
     padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .best .best-title h5 {
+    text-align: 'center'
   }
 
   .best .best-container .best-imagebox {
