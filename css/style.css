@@ -815,6 +815,7 @@ header #en img {
   background: none;
   width: auto;
   height: 8.6rem;
+  padding: 0.15rem;
 }
 
 .pyramid .pyramid-container .pyramid-imagebox .pyramid-img1:hover {
@@ -826,6 +827,8 @@ header #en img {
   background: none;
   width: auto;
   height: 7.3rem;
+  padding: 0.15rem;
+  filter: drop-shadow(0 3px 8px rgb(136, 136, 136));
 }
 
 .pyramid .pyramid-container .pyramid-imagebox .pyramid-img2:hover {
@@ -931,8 +934,8 @@ header #en img {
 
   .pyramid .pyramid-container .pyramid-imagebox .pyramid-img1 img {
     margin: auto;
-    width: auto;
-    height: 6rem;
+    width: auto;;
+    height: 5.9rem;
   }
 
   .pyramid .pyramid-container .pyramid-imagebox .pyramid-img2 img {
