@@ -83,13 +83,22 @@ function pyramidresponse(idp) {
     document.getElementById("text2").style.display = "block";
     document.getElementById("button1").style.backgroundColor = "black";
     document.getElementById("button2").style.backgroundColor = "white";
+    var elt = document.getElementById("imgp1");
+    elt.style.setProperty("-webkit-filter", "drop-shadow(0 3px 8px rgb(136, 136, 136))");
+    var elt2 = document.getElementById("imgp2");
+    elt2.style.setProperty("-webkit-filter", "none");
   } else {
     onclick = document.getElementById("text2").style.display = "none";
     document.getElementById("text1").style.display = "block";
     document.getElementById("button2").style.backgroundColor = "black";
     document.getElementById("button1").style.backgroundColor = "white";
+    var elt = document.getElementById("imgp1");
+    elt.style.setProperty("-webkit-filter", "none");
+    var elt2 = document.getElementById("imgp2");
+    elt2.style.setProperty("-webkit-filter", "drop-shadow(0 3px 8px rgb(136, 136, 136))");
   }
 }
+
 
 //botão para o topo
 document.getElementById("back-to-top").addEventListener("click", function () {
