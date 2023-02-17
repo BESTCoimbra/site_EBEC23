@@ -10,10 +10,10 @@
 
 var navbarPhone = document.querySelector(".options-phone");
 function menuOpen() {
-  if (navbarPhone.style.display === "grid") {
+  if (navbarPhone.style.display === "flex") {
     navbarPhone.style.display = "none";
   } else {
-    navbarPhone.style.display = "grid";
+    navbarPhone.style.display = "flex";
   }
 }
 /*
@@ -114,3 +114,14 @@ window.onscroll = function () {
   }
   navbarPhone.style.display = "none";
 };
+
+var btn = document.querySelector(".btn");
+btn.addEventListener('click', function() {
+  if (this.classList.contains('active')) {
+    this.classList.remove('active');
+    this.classList.add('not-active');
+  } else {
+    this.classList.remove('not-active');
+    this.classList.add('active');
+  }
+});
