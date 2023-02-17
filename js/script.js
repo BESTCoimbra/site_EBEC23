@@ -8,6 +8,7 @@
   }
 })();
 var navbarPhone = document.querySelector(".options-phone");
+var optionNavbarPhone = document.querySelector(".nav-option");
 /*
 function menuOpen() {
   if (navbarPhone.style.display === "flex") {
@@ -30,6 +31,13 @@ btn.addEventListener('click', function() {
     navbarPhone.style.display = "flex";
   }
 });
+
+navbarPhone.addEventListener('click', function() {
+  btn.classList.remove('active');
+  btn.classList.add('not-active');
+  navbarPhone.style.display = "none";
+});
+
 
 /*
 document.body.addEventListener('click', function(event) {
@@ -113,7 +121,6 @@ function pyramidresponse(idp) {
     elt2.style.setProperty("-webkit-filter", "drop-shadow(0 3px 8px rgb(136, 136, 136))");
   }
 }
-
 
 //botão para o topo
 document.getElementById("back-to-top").addEventListener("click", function () {
