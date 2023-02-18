@@ -33,7 +33,7 @@ btn.addEventListener('click', function() {
 });
 
 optionsPhone.forEach(option => {
-  option.addEventListener('click', function() {
+  option.addEventListener('touchstart', function() {
     console.log('atão');
     btn.classList.remove('active');
     btn.classList.add('not-active');
