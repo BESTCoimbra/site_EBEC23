@@ -7,8 +7,8 @@
     loader.classList.add("disappear");
   }
 })();
-var navbarPhone = document.querySelector(".options-phone");
-var optionNavbarPhone = document.querySelector(".nav-option");
+const navbarPhone = document.querySelector(".options-phone");
+const optionsPhone = document.querySelectorAll('.nav-option2');
 /*
 function menuOpen() {
   if (navbarPhone.style.display === "flex") {
@@ -32,10 +32,13 @@ btn.addEventListener('click', function() {
   }
 });
 
-navbarPhone.addEventListener('click', function() {
-  btn.classList.remove('active');
-  btn.classList.add('not-active');
-  navbarPhone.style.display = "none";
+optionsPhone.forEach(option => {
+  option.addEventListener('click', function() {
+    console.log('atão');
+    btn.classList.remove('active');
+    btn.classList.add('not-active');
+    navbarPhone.style.display = "none";
+  });
 });
 
 
